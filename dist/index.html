@@ -13,9 +13,9 @@
     <section class="relative w-[100%]">
       <div class="h-[500px] relative">
         <nav
-          class="navbar z-[999] absolute right-[73px] w-[50%] p-[35px] bg-main-bg rounded-bl-[30px] lg:w-[100%] lg:mr-0 lg:bg-white lg:rounded-none lg:h-[50px] lg:right-0"
+          class="navbar z-[999] absolute w-[50%] p-[35px] bg-main-bg rounded-bl-[30px] lg:w-[100%] lg:mr-0 lg:bg-white lg:rounded-none lg:h-[50px] lg:right-0"
         >
-          <ul class="flex flex-row gap-5 text-white">
+          <ul class="flex flex-row gap-5 text-white lg:hidden">
             <li class="hover:text-yellow-400"><a href="#">صفحه اصلی</a></li>
             <li class="hover:text-yellow-400"><a href="#">محصولات</a></li>
             <li class="hover:text-yellow-400"><a href="#">تماس با ما</a></li>
@@ -30,7 +30,7 @@
       <!-- ============================================= -->
 
       <div
-        class="absolute top-[30px] left-1/2 transform -translate-x-1/2 max-w-[1480px] w-[90%] lg:w-[100%] sm:w-[90%]"
+        class="absolute top-[30px] left-1/2 transform -translate-x-1/2 max-w-[1500px] w-[100%] lg:w-[100%] sm:w-[90%]"
       >
         <div
           id="carouselExampleCrossfade"
@@ -175,17 +175,17 @@
 
         <section class="">
           <div
-            class="absolute left-[20px] bottom-[158px] w-[120px] h-[60px] p-[10px] rounded-tl-[20px] text-[10px] font-bold z-[999] bg-secondary-bg"
+            class="absolute left-[20px] bottom-[180px] max-w-[150px] w-[100%] h-[60px] p-[10px] rounded-tl-[20px] text-[14px] font-bold z-[999] bg-secondary-bg"
           >
             <p class="text-center">چراغ ریلی آهنربایی</p>
           </div>
           <div
-            class="absolute w-[250px] bottom-[30px] left-[20px] bg-white z-[999] p-[40px] flex flex-col gap-[10px] rounded-[30px]"
+            class="absolute w-[300px] bottom-[30px] left-[20px] bg-white z-[999] p-[40px] flex flex-col gap-[10px] rounded-[30px]"
           >
-            <img src="../src/img/logo.png" alt="logo" class="" />
+            <img src="../src/img/logo.png" alt="logo" class="W-[50PX]" />
             <button
               type="button"
-              class="bg-secondary-bg rounded-full font-bold text-[12px] p-[3px]"
+              class="bg-secondary-bg rounded-full font-bold text-[12px] p-[8px] max-w-[160PX] w-[100%] mx-auto"
             >
               <a href="#">مشاهده محصولات</a>
             </button>
@@ -199,9 +199,9 @@
     <!-- ============================================= -->
 
     <section
-      class="mt-[300px] flex flex-row flex-wrap justify-center lg:w-[100%] lg:max-w-[1023px]"
+      class="mt-[300px] flex flex-row lg:flex-wrap justify-center max-w-[1480px] w-[100%] lg:w-[100%] lg:max-w-[1023px]"
     >
-      <div class="flex flex-col gap-[30px] lg:text-center">
+      <div class="flex flex-col gap-[30px] lg:text-center w-[50%]">
         <div class="flex flex-col gap-[15px]">
           <h3 class="text-black font-bold text-[22px]">محصولات زنولند</h3>
           <h4 class="text-white font-bodl text-[20px] sm:text-[16px]">
@@ -225,44 +225,45 @@
             <a href="#">مشاوره رایگان</a>
           </button>
         </div>
-        <div class="mx-auto">
+        <div class=" ">
           <video
             src="#"
             controls
-            class="rounded-2xl max-w-[600px] w-[100%]"
+            class="rounded-2xl w-[650px] h-[250px]"
           ></video>
         </div>
       </div>
-      <div class="relative flex flex-col mr-[30px] lg:mr-0 lg:hidden">
-        <div class="flex flex-row gap-8 lg:mt-[50px]">
-          <!-- image1 -->
+      <div class="w-[40%] flex flex-row gap-8 mr-[00px] lg:mr-0">
+        <div class="flex flex-col gap-8 relative">
+          <!--image1-->
           <div class="relative">
-            <img class="h-[350px] w-[100%]" src="./img/2.png" alt="" />
-            <!-- <p class="absolute bottom-0">چراغ مگنتی سقفی</p> -->
+            <img src="./img/5.png" alt="" />
+            <p class="absolute top-1 right-[80px] text-yellow-500 font-bold">
+              چراغ مگنتی سقفی
+            </p>
           </div>
-
-          <!-- image2 -->
-          <div>
-            <img class="h-[450px] w-[100%]" src="./img/3.png" alt="" />
-            <!-- <p>چراغ مگنتی سقفی</p> -->
+          <!--image2-->
+          <div class="relative overflow-hidden custom-box-shadow">
+            <img src="./img/2.png" alt="" class="w-full h-full object-cover" />
+            <p class="absolute bottom-8 right-[80px] text-yellow-500 font-bold">
+              چراغ مگنتی سقفی
+            </p>
           </div>
         </div>
-
-        <div class="flex flex-row gap-8 w-[52%]">
-          <!-- image3 -->
-          <div>
-            <img class="h-[250px] w-[100%]" src="./img/4.png" alt="" />
-            <!-- <p>چراغ مگنتی سقفی</p> -->
+        <div class="flex flex-col gap-8">
+          <!--image3-->
+          <div class="relative overflow-hidden custom-box-shadow">
+            <img src="./img/2.png" alt="" class="w-full h-full object-cover" />
+            <p class="absolute bottom-8 right-[80px] text-yellow-500 font-bold">
+              چراغ مگنتی سقفی
+            </p>
           </div>
-
-          <!-- image4 -->
-          <div>
-            <img
-              class="absolute left-0 bottom-0 h-[160px] w-[48%]"
-              src="./img/5.png"
-              alt=""
-            />
-            <!-- <p>چراغ مگنتی سقفی</p> -->
+          <!--image4-->
+          <div class="relative">
+            <img src="./img/5.png" alt="" />
+            <p class="absolute top-1 right-[80px] text-yellow-500 font-bold">
+              چراغ مگنتی سقفی
+            </p>
           </div>
         </div>
       </div>
@@ -281,14 +282,14 @@
       <div
         class="flex flex-row lg:flex-wrap items-center justify-center gap-4 mx-auto"
       >
-        <div class="relative flex-shrink-0 w-[45%] lg:w-[100%]">
+        <div class="relative flex-shrink-0 w-[50%] lg:w-[100%]">
           <img
             src="./img/6.png"
             alt=""
-            class="h-[450px] w-[100%] lg:mx-auto lg:w-[95%] sm:h-auto"
+            class="w-[100%] lg:mx-auto lg:w-[95%] sm:h-auto"
           />
           <div
-            class="projects absolute bg-main-bg bottom-0 p-[30px] rounded-tl-[40px] shadow-lg shadow-[#4b5563] sm:p-[15px]"
+            class="projects absolute bg-main-bg bottom-0 p-[30px] rounded-tl-[40px] shadow-lg shadow-[#4b5563] sm:hidden"
           >
             <h4 class="text-white font-bold text-[20px] mb-[15px]">
               پروژه های پیاده سازی شده
@@ -311,11 +312,20 @@
           </div>
         </div>
         <div
-          class="flex flex-row gap-4 relative flex-shrink-0 w-[45%] lg:w-[100%] lg:mx-auto lg:items-center lg:justify-center"
+          class="flex flex-row gap-4 relative flex-shrink-0 w-[50%] lg:w-[100%] lg:mx-auto lg:items-center lg:justify-center"
         >
-          <img src="./img/7.png" alt="" class="h-[450px] w-[45%] lg:h-auto" />
-
-          <img src="./img/8.png" alt="" class="h-[450px] w-[45%] lg:h-auto" />
+          <div class="relative overflow-hidden custom-box-shadow w-[47%]">
+            <img src="./img/7.png" alt="" class="w-full h-full object-cover" />
+            <p class="absolute bottom-8 right-[120px] text-white font-bold">
+              چراغ مگنتی سقفی
+            </p>
+          </div>
+          <div class="relative overflow-hidden custom-box-shadow w-[47%]">
+            <img src="./img/8.png" alt="" class="w-full h-full object-cover" />
+            <p class="absolute bottom-8 right-[120px] text-white font-bold">
+              چراغ مگنتی سقفی
+            </p>
+          </div>
         </div>
       </div>
     </section>
@@ -325,7 +335,7 @@
     <!-- ============================================= -->
 
     <section
-      class="flex flex-col gap-8 items-center justify-center mt-[150px] w-[100%] mx-auto max-w-[1400px] lg:max-w-[1024px] sm:w-[80%] sm:mx-auto"
+      class="flex flex-col gap-8 items-center justify-center mt-[150px] mx-auto max-w-[1480px] w-[100%] lg:max-w-[1024px] sm:w-[100%] sm:mx-auto"
     >
       <div>
         <h3 class="text-white font-bold text-[22px]">خدمات زنولند</h3>
@@ -334,10 +344,10 @@
         class="flex flex-row lg:flex-wrap items-center justify-center gap-4 mx-auto"
       >
         <div
-          class="flex flex-row gap-4 flex-shrink-0 w-[45%] lg:w-[90%] lg:mx-auto lg:items-center lg:justify-center"
+          class="flex flex-row gap-4 flex-shrink-0 w-[50%] lg:w-[90%] lg:mx-auto lg:items-center lg:justify-center sm:flex-col"
         >
           <div
-            class="info-box bg-secondary-bg rounded-r-[40px] flex flex-col items-center gap-4 w-[50%] sm:h-[105.6px] sm:gap-1"
+            class="info-box bg-secondary-bg rounded-r-[40px] flex flex-col items-center gap-4 w-[50%] sm:h-[105.6px] sm:gap-1 sm:rounded-[20px] sm:w-[100%]"
           >
             <svg></svg>
             <h3 class="font-bold text-[35px] sm:text-[10px]">جدیدترین مطالب</h3>
@@ -351,15 +361,22 @@
               <a href="#" class="sm:text-[8px]">همه مطالب</a>
             </button>
           </div>
-          <div class="w-[50%]">
-            <img src="./img/1.jpg" alt="" class="h-[450px] lg:h-auto" />
+          <div
+            class="w-[50%] sm:w-[100%] relative overflow-hidden custom-box-shadow text-"
+          >
+            <img src="./img/1.jpg" alt="" class="sm:w-[100%] sm:h-[150px]" />
+            <h3 class="absolute bottom-1/2 right-[10px] text-white  font-bold text-[25px]">نور درمانی</h3>
+            <p class="absolute bottom-8 right-[10px] text-white font-bold">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est doloremque nobis aspernatur sint obcaecati eos fugiat mollitia, ex nulla, quo accusantium architecto sit similique culpa esse dicta deleniti error molestiae!
+            </p>
+            <p class="absolute top-2 left-2 p-1 text-[12px] bg-secondary-bg rounded-full">چراغ مگنتی</p>
           </div>
         </div>
-        <div class="flex-shrink-0 w-[45%] lg:w-[90%]">
+        <div class="flex-shrink-0 w-[50%] lg:w-[90%]">
           <img
             src="./img/10.jpg"
             alt=""
-            class="h-[450px] w-[100%] rounded-l-[40px] lg:w-[100%] sm:w-[100%] sm:h-auto"
+            class="w-[99%] rounded-l-[40px] lg:w-[100%] sm:w-[100%] sm:h-auto"
           />
         </div>
       </div>
@@ -373,7 +390,7 @@
       class="mt-[100px] flex items-center justify-center w-[100%] mx-auto"
     >
       <div
-        class="rounded-full bg-secondary-bg flex flex-row p-[30px] justify-evenly w-[60%] md:flex-col md:items-center md:justify-center sm:gap-[30px] sm:rounded-[60px]"
+        class="rounded-full bg-secondary-bg flex flex-row p-[30px] justify-evenly w-[60%] md:flex-col md:items-center md:justify-center sm:gap-[30px] sm:rounded-[20px]"
       >
         <h3 class="font-bold">
           برای دریافت كشاوره رايگان از زنولد به اين قسمت مراجعه كنيد.
@@ -389,7 +406,7 @@
     <!-- ============================================= -->
 
     <footer
-      class="my-[50px] p-[60px] w-[100%] bg-white flex flex-row-reverse justify-between mx-auto rounded-[60px] max-w-[1420px] md:flex-col md:justify-center md:items-center md:gap-[55px] sm:w-[90%]"
+      class="my-[50px] mx-auto p-[60px] w-[100%] bg-white flex flex-row-reverse justify-between mx-auto rounded-[60px] max-w-[1420px] md:flex-col md:justify-center md:items-center md:gap-[55px] sm:w-[90%]"
     >
       <div>
         <img src="./img/logo.png" alt="logo" />
