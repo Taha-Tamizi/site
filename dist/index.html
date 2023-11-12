@@ -30,7 +30,7 @@
       <!-- ============================================= -->
 
       <div
-        class="absolute top-[30px] left-1/2 transform -translate-x-1/2 max-w-[1500px] w-[100%] lg:w-[100%] sm:w-[90%]"
+        class="absolute top-[30px] left-1/2 transform -translate-x-1/2 max-w-[1500px] w-[100%] lg:w-[95%] lg:top-[90px] lg:h-[350px]"
       >
         <div
           id="carouselExampleCrossfade"
@@ -40,7 +40,7 @@
         >
           <!--Carousel indicators-->
           <div
-            class="absolute inset-x-0 bottom-0 z-[2] mx-[15%] mb-4 flex list-none justify-center p-0"
+            class="absolute inset-x-0 bottom-0 z-[2] mx-[15%] mb-4 flex list-none justify-center p-0 sm:top-[350px]"
             data-te-carousel-indicators
           >
             <button
@@ -70,7 +70,7 @@
 
           <!--Carousel items-->
           <div
-            class="relative w-full overflow-hidden after:clear-both after:block after:content-[''] rounded-br-[40px] rounded-tl-[40px] lg:rounded-br-none"
+            class="relative w-full overflow-hidden after:clear-both after:block after:content-[''] rounded-br-[40px] rounded-tl-[40px] lg:rounded-[40px]"
           >
             <!--First item-->
             <div
@@ -81,7 +81,7 @@
             >
               <img
                 src="../src/img/download.jpg"
-                class="block w-full h-[650px]"
+                class="block w-full h-[650px] lg:max-h-[650px] lg:h-[60%]"
                 alt="Wild Landscape"
               />
             </div>
@@ -93,7 +93,7 @@
             >
               <img
                 src="../src/img/download1.jpg"
-                class="block w-full h-[650px]"
+                class="block w-full h-[650px] lg:max-h-[650px] lg:h-[60%]"
                 alt="Camera"
               />
             </div>
@@ -105,7 +105,7 @@
             >
               <img
                 src="../src/img/download2.jpg"
-                class="block w-full h-[650px]"
+                class="block w-full h-[650px] lg:max-h-[650px] lg:h-[60%]"
                 alt="Exotic Fruits"
               />
             </div>
@@ -175,12 +175,12 @@
 
         <section class="">
           <div
-            class="absolute left-[20px] bottom-[180px] max-w-[150px] w-[100%] h-[60px] p-[10px] rounded-tl-[20px] text-[14px] font-bold z-[999] bg-secondary-bg"
+            class="absolute left-[20px] bottom-[180px] sm:bottom-[170px] sm:mx-auto sm:left-[15%] max-w-[150px]  sm:w-[70%] h-[60px] p-[10px] rounded-tl-[20px] text-[14px] font-bold z-[999] bg-secondary-bg"
           >
             <p class="text-center">چراغ ریلی آهنربایی</p>
           </div>
           <div
-            class="absolute w-[300px] bottom-[30px] left-[20px] bg-white z-[999] p-[40px] flex flex-col gap-[10px] rounded-[30px]"
+            class="absolute max-w-[300px] w-[100%] sm:w-[70%] bottom-[30px] left-[20px] sm:mx-auto sm:left-[15%] bg-white z-[999] p-[40px] flex flex-col gap-[10px] rounded-[20px]"
           >
             <img src="../src/img/logo.png" alt="logo" class="W-[50PX]" />
             <button
@@ -199,9 +199,11 @@
     <!-- ============================================= -->
 
     <section
-      class="mt-[300px] flex flex-row lg:flex-wrap justify-center max-w-[1480px] w-[100%] lg:w-[100%] lg:max-w-[1023px]"
+      class="mt-[300px] md:mt-0 flex flex-row lg:flex-wrap justify-center max-w-[1480px] w-[100%] lg:w-[90%] lg:flex-col"
     >
-      <div class="flex flex-col gap-[30px] lg:text-center w-[50%]">
+      <div
+        class="flex flex-col mt-[5px] gap-[30px] lg:text-center mr-[10px] w-[50%] lg:w-[100%]"
+      >
         <div class="flex flex-col gap-[15px]">
           <h3 class="text-black font-bold text-[22px]">محصولات زنولند</h3>
           <h4 class="text-white font-bodl text-[20px] sm:text-[16px]">
@@ -225,43 +227,55 @@
             <a href="#">مشاوره رایگان</a>
           </button>
         </div>
-        <div class=" ">
+        <div class="mx-auto">
           <video
             src="#"
             controls
-            class="rounded-2xl w-[650px] h-[250px]"
+            class="rounded-2xl w-[650px] h-[300px] sm:h-[175px] md:w-[90%] mx-auto"
           ></video>
         </div>
       </div>
-      <div class="w-[40%] flex flex-row gap-8 mr-[00px] lg:mr-0">
-        <div class="flex flex-col gap-8 relative">
+      <div
+        class="w-[40%] flex flex-row gap-8 mr-[90px] lg:mt-5 lg:w-[90%] lg:mx-auto sm:gap-4"
+      >
+        <div class="flex flex-col gap-8 relative sm:gap-4">
           <!--image1-->
           <div class="relative">
             <img src="./img/5.png" alt="" />
-            <p class="absolute top-1 right-[80px] text-yellow-500 font-bold">
+            <p
+              class="absolute top-0 left-1/2 -translate-x-1/2 text-yellow-500 font-bold mt-4 sm:text-[8px]"
+            >
               چراغ مگنتی سقفی
             </p>
           </div>
+
           <!--image2-->
           <div class="relative overflow-hidden custom-box-shadow">
             <img src="./img/2.png" alt="" class="w-full h-full object-cover" />
-            <p class="absolute bottom-8 right-[80px] text-yellow-500 font-bold">
+            <p
+              class="absolute bottom-0 left-1/2 -translate-x-1/2 text-yellow-500 font-bold mb-4 sm:text-[8px]"
+            >
               چراغ مگنتی سقفی
             </p>
           </div>
         </div>
-        <div class="flex flex-col gap-8">
+        <div class="flex flex-col gap-8 relative sm:gap-4">
           <!--image3-->
           <div class="relative overflow-hidden custom-box-shadow">
             <img src="./img/2.png" alt="" class="w-full h-full object-cover" />
-            <p class="absolute bottom-8 right-[80px] text-yellow-500 font-bold">
+            <p
+              class="absolute bottom-0 left-1/2 -translate-x-1/2 text-yellow-500 font-bold mb-4 sm:text-[8px]"
+            >
               چراغ مگنتی سقفی
             </p>
           </div>
+
           <!--image4-->
           <div class="relative">
             <img src="./img/5.png" alt="" />
-            <p class="absolute top-1 right-[80px] text-yellow-500 font-bold">
+            <p
+              class="absolute top-0 left-1/2 -translate-x-1/2 text-yellow-500 font-bold mt-4 sm:text-[8px]"
+            >
               چراغ مگنتی سقفی
             </p>
           </div>
@@ -282,47 +296,54 @@
       <div
         class="flex flex-row lg:flex-wrap items-center justify-center gap-4 mx-auto"
       >
-        <div class="relative flex-shrink-0 w-[50%] lg:w-[100%]">
+        <div class="relative flex-shrink-0 w-[51%] lg:w-[100%]">
           <img
             src="./img/6.png"
             alt=""
             class="w-[100%] lg:mx-auto lg:w-[95%] sm:h-auto"
           />
           <div
-            class="projects absolute bg-main-bg bottom-0 p-[30px] rounded-tl-[40px] shadow-lg shadow-[#4b5563] sm:hidden"
+            class="projects absolute bg-main-bg bottom-0 p-[30px] rounded-tl-[40px] shadow-lg shadow-[#4b5563] sm:text-center sm:relative sm:w-[90%] sm:mx-auto"
           >
-            <h4 class="text-white font-bold text-[20px] mb-[15px]">
+            <h4
+              class="text-white font-bold text-[20px] mb-[15px] sm:text-[16px]"
+            >
               پروژه های پیاده سازی شده
             </h4>
-            <a
-              href="#"
-              class="bg-secondary-bg p-[5px] rounded-full sm:p-2 sm:text-[8px]"
-              >چراغ خطی</a
-            >
-            <a
-              href="#"
-              class="bg-secondary-bg p-[5px] rounded-full sm:p-2 sm:text-[8px]"
-              >چراغ مگنتی</a
-            >
-            <a
-              href="#"
-              class="bg-secondary-bg p-[5px] rounded-full sm:p-2 sm:text-[8px]"
-              >چراغ ریلی</a
-            >
+            <div class="sm:flex justify-evenly sm:text-[10px]">
+              <a href="#" class="bg-secondary-bg p-[5px] rounded-full sm:p-1"
+                >چراغ خطی</a
+              >
+              <a href="#" class="bg-secondary-bg p-[5px] rounded-full sm:p-1"
+                >چراغ مگنتی</a
+              >
+              <a href="#" class="bg-secondary-bg p-[5px] rounded-full sm:p-1"
+                >چراغ ریلی</a
+              >
+            </div>
           </div>
         </div>
         <div
-          class="flex flex-row gap-4 relative flex-shrink-0 w-[50%] lg:w-[100%] lg:mx-auto lg:items-center lg:justify-center"
+          class="flex flex-row gap-4 relative flex-shrink-0 w-[50%] lg:w-[100%] lg:mx-auto lg:items-center lg:justify-center sm:flex-col"
         >
-          <div class="relative overflow-hidden custom-box-shadow w-[47%]">
+          <div
+            class="relative overflow-hidden custom-box-shadow w-[48%] sm:w-[100%]"
+          >
             <img src="./img/7.png" alt="" class="w-full h-full object-cover" />
-            <p class="absolute bottom-8 right-[120px] text-white font-bold">
+            <p
+              class="absolute bottom-0 left-0 right-0 text-white font-bold text-center mb-4"
+            >
               چراغ مگنتی سقفی
             </p>
           </div>
-          <div class="relative overflow-hidden custom-box-shadow w-[47%]">
+
+          <div
+            class="relative overflow-hidden custom-box-shadow w-[48%] sm:w-[100%]"
+          >
             <img src="./img/8.png" alt="" class="w-full h-full object-cover" />
-            <p class="absolute bottom-8 right-[120px] text-white font-bold">
+            <p
+              class="absolute bottom-0 left-0 right-0 text-white font-bold text-center mb-4"
+            >
               چراغ مگنتی سقفی
             </p>
           </div>
@@ -347,37 +368,198 @@
           class="flex flex-row gap-4 flex-shrink-0 w-[50%] lg:w-[90%] lg:mx-auto lg:items-center lg:justify-center sm:flex-col"
         >
           <div
-            class="info-box bg-secondary-bg rounded-r-[40px] flex flex-col items-center gap-4 w-[50%] sm:h-[105.6px] sm:gap-1 sm:rounded-[20px] sm:w-[100%]"
+            class="info-box bg-secondary-bg rounded-r-[40px] flex flex-col items-center justify-center gap-1 w-[50%] sm:h-[350px] sm:gap-1 sm:rounded-[20px] sm:w-[100%]"
           >
             <svg></svg>
-            <h3 class="font-bold text-[35px] sm:text-[10px]">جدیدترین مطالب</h3>
-            <p class="mr-[15px] sm:text-[5px]">
+            <h3 class="font-bold text-[35px]">جدیدترین مطالب</h3>
+            <p class="mr-[15px]">
               محصولات روشنايى با برند زنولد توسط آموختكان حوزه نورپردازى و
               روشنايى وافراد جامعه به بازار عرضه شده است .
             </p>
             <button
-              class="p-[10px] w-[120px] font-bold border-solid border-2 border-black rounded-full md:p-[0px] md:mb-[0px] sm:w-[60px] sm:font-light"
+              class="p-[10px] w-[120px] font-bold border-solid border-2 border-black rounded-full md:p-[0px] md:mb-[0px]"
             >
-              <a href="#" class="sm:text-[8px]">همه مطالب</a>
+              <a href="#" class="">همه مطالب</a>
             </button>
           </div>
           <div
-            class="w-[50%] sm:w-[100%] relative overflow-hidden custom-box-shadow text-"
+            class="w-[50%] sm:w-[100%] relative overflow-hidden custom-box-shadow2"
           >
-            <img src="./img/1.jpg" alt="" class="sm:w-[100%] sm:h-[150px]" />
-            <h3 class="absolute bottom-1/2 right-[10px] text-white  font-bold text-[25px]">نور درمانی</h3>
-            <p class="absolute bottom-8 right-[10px] text-white font-bold">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est doloremque nobis aspernatur sint obcaecati eos fugiat mollitia, ex nulla, quo accusantium architecto sit similique culpa esse dicta deleniti error molestiae!
+            <img
+              src="./img/1.jpg"
+              alt=""
+              class="sm:w-[100%] sm:h-[350px] sm:rounded-[20px]"
+            />
+            <div class="absolute bottom-0 left-0 right-0 p-[10px]">
+              <h3 class="text-white font-bold text-[25px]">نور درمانی</h3>
+              <p class="text-white font-bold">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est
+                doloremque nobis aspernatur sint obcaecati eos fugiat mollitia,
+                ex nulla, quo accusantium architecto sit similique culpa esse
+                dicta deleniti error molestiae!
+              </p>
+            </div>
+            <p
+              class="absolute top-2 left-2 p-1 text-[12px] bg-secondary-bg rounded-full"
+            >
+              چراغ مگنتی
             </p>
-            <p class="absolute top-2 left-2 p-1 text-[12px] bg-secondary-bg rounded-full">چراغ مگنتی</p>
           </div>
         </div>
+
+        <!-- ========================== -->
+        <!-- blog slider -->
+        <!-- ========================== -->
+
         <div class="flex-shrink-0 w-[50%] lg:w-[90%]">
-          <img
-            src="./img/10.jpg"
-            alt=""
-            class="w-[99%] rounded-l-[40px] lg:w-[100%] sm:w-[100%] sm:h-auto"
-          />
+          <div
+            id="carouselExampleCaptions"
+            class="relative"
+            data-te-carousel-init
+            data-te-ride="carousel"
+          >
+            <!--Carousel indicators-->
+            <div
+              class="absolute bottom-0 left-0 right-0 z-[2] mx-[15%] mb-4 flex list-none justify-center p-0"
+              data-te-carousel-indicators
+            >
+              <button
+                type="button"
+                data-te-target="#carouselExampleCaptions"
+                data-te-slide-to="0"
+                data-te-carousel-active
+                class="mx-[3px] box-content h-[12px] w-[12px] rounded-full flex-initial cursor-pointer border-0 border-solid border-transparent bg-white bg-clip-padding p-0 opacity-50 transition-opacity duration-[600ms] ease-[cubic-bezier(0.25,0.1,0.25,1.0)] motion-reduce:transition-none"
+                aria-current="true"
+                aria-label="Slide 1"
+              ></button>
+              <button
+                type="button"
+                data-te-target="#carouselExampleCaptions"
+                data-te-slide-to="1"
+                class="mx-[3px] box-content h-[12px] w-[12px] rounded-full flex-initial cursor-pointer border-0 border-solid border-transparent bg-white bg-clip-padding p-0 opacity-50 transition-opacity duration-[600ms] ease-[cubic-bezier(0.25,0.1,0.25,1.0)] motion-reduce:transition-none"
+                aria-label="Slide 2"
+              ></button>
+              <button
+                type="button"
+                data-te-target="#carouselExampleCaptions"
+                data-te-slide-to="2"
+                class="mx-[3px] box-content h-[12px] w-[12px] rounded-full flex-initial cursor-pointer border-0 border-solid border-transparent bg-white bg-clip-padding p-0 opacity-50 transition-opacity duration-[600ms] ease-[cubic-bezier(0.25,0.1,0.25,1.0)] motion-reduce:transition-none"
+                aria-label="Slide 3"
+              ></button>
+            </div>
+
+            <!--Carousel items-->
+            <div
+              class="relative w-full overflow-hidden after:clear-both after:block after:content-['']"
+            >
+              <!--First item-->
+              <div
+                class="relative float-left -mr-[100%] w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none overflow-hidden custom-box-shadow1"
+                data-te-carousel-active
+                data-te-carousel-item
+                style="backface-visibility: hidden"
+              >
+                <img
+                  src="./img/10.jpg"
+                  class="block w-full rounded-l-[40px] lg:rounded-[20px]"
+                  alt="..."
+                />
+                <div
+                  class="absolute flex flex-col gap-[25px] inset-x-[10%] bottom-5 py-5 text-right text-white md:block sm:gap-[0px]"
+                >
+                  <div class="flex gap-[30px] w-[70%]">
+                    <p
+                      class="border-l-[1px] p-[10px] pl-[20px] h-[5px] flex items-center justify-center sm:pl-[15px] sm:p-[5px] sm:text-[6px]"
+                    >
+                      در تاریخ:28 آبان 1402
+                    </p>
+                    <p
+                      class="p-[10px] h-[5px] flex items-center justify-center sm:p-[5px] sm:text-[6px]"
+                    >
+                      توسط => زنولند
+                    </p>
+                  </div>
+                  <hr class="w-[70%]" />
+                  <h3 class="text-[32px] font-bold sm:text-[16px]">
+                    First slide label
+                  </h3>
+                  <p class="sm:text-[10px]">
+                    Some representative placeholder content for the first slide.
+                  </p>
+                </div>
+              </div>
+              <!--Second item-->
+              <div
+                class="relative float-left -mr-[100%] hidden w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none custom-box-shadow1"
+                data-te-carousel-item
+                style="backface-visibility: hidden"
+              >
+                <img
+                  src="./img/10.jpg"
+                  class="block w-full rounded-l-[40px] lg:rounded-[20px]"
+                  alt="..."
+                />
+                <div
+                  class="absolute flex flex-col gap-[25px] inset-x-[10%] bottom-5 py-5 text-right text-white md:block"
+                >
+                  <div class="flex gap-[30px] w-[70%]">
+                    <p
+                      class="border-l-[1px] p-[10px] pl-[20px] h-[5px] flex items-center justify-center sm:pl-[15px] sm:p-[5px] sm:text-[6px]"
+                    >
+                      در تاریخ:28 آبان 1402
+                    </p>
+                    <p
+                      class="p-[10px] h-[5px] flex items-center justify-center sm:p-[5px] sm:text-[6px]"
+                    >
+                      توسط => زنولند
+                    </p>
+                  </div>
+                  <hr class="w-[70%]" />
+                  <h3 class="text-[32px] font-bold sm:text-[16px]">
+                    First slide label
+                  </h3>
+                  <p class="sm:text-[10px]">
+                    Some representative placeholder content for the first slide.
+                  </p>
+                </div>
+              </div>
+              <!--Third item-->
+              <div
+                class="relative float-left -mr-[100%] hidden w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none custom-box-shadow1"
+                data-te-carousel-item
+                style="backface-visibility: hidden"
+              >
+                <img
+                  src="./img/10.jpg"
+                  class="block w-full rounded-l-[40px] lg:rounded-[20px]"
+                  alt="..."
+                />
+                <div
+                  class="absolute flex flex-col gap-[25px] inset-x-[10%] bottom-5 py-5 text-right text-white md:block"
+                >
+                  <div class="flex gap-[30px] w-[70%]">
+                    <p
+                      class="border-l-[1px] p-[10px] pl-[20px] h-[5px] flex items-center justify-center sm:pl-[15px] sm:p-[5px] sm:text-[6px]"
+                    >
+                      در تاریخ:28 آبان 1402
+                    </p>
+                    <p
+                      class="p-[10px] h-[5px] flex items-center justify-center sm:p-[5px] sm:text-[6px]"
+                    >
+                      توسط => زنولند
+                    </p>
+                  </div>
+                  <hr class="w-[70%]" />
+                  <h3 class="text-[32px] font-bold sm:text-[16px]">
+                    First slide label
+                  </h3>
+                  <p class="sm:text-[10px]">
+                    Some representative placeholder content for the first slide.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -390,7 +572,7 @@
       class="mt-[100px] flex items-center justify-center w-[100%] mx-auto"
     >
       <div
-        class="rounded-full bg-secondary-bg flex flex-row p-[30px] justify-evenly w-[60%] md:flex-col md:items-center md:justify-center sm:gap-[30px] sm:rounded-[20px]"
+        class="rounded-full bg-secondary-bg flex flex-row p-[30px] justify-evenly w-[60%] md:flex-col md:items-center md:justify-center sm:gap-[30px] sm:rounded-[20px] lg:w-[90%]"
       >
         <h3 class="font-bold">
           برای دریافت كشاوره رايگان از زنولد به اين قسمت مراجعه كنيد.
