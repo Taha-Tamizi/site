@@ -45,25 +45,25 @@
           >
             <button
               type="button"
-              data-te-target="#carouselExampleCrossfade"
+              data-te-target="#carouselExampleCaptions"
               data-te-slide-to="0"
               data-te-carousel-active
-              class="mx-[3px] box-content h-[3px] w-[30px] flex-initial cursor-pointer border-0 border-y-[10px] border-solid border-transparent bg-white bg-clip-padding p-0 -indent-[999px] opacity-50 transition-opacity duration-[600ms] ease-[cubic-bezier(0.25,0.1,0.25,1.0)] motion-reduce:transition-none"
+              class="mx-[3px] box-content h-[12px] w-[12px] rounded-full flex-initial cursor-pointer border-0 border-solid border-transparent bg-white bg-clip-padding p-0 opacity-50 transition-opacity duration-[600ms] ease-[cubic-bezier(0.25,0.1,0.25,1.0)] motion-reduce:transition-none"
               aria-current="true"
               aria-label="Slide 1"
             ></button>
             <button
               type="button"
-              data-te-target="#carouselExampleCrossfade"
+              data-te-target="#carouselExampleCaptions"
               data-te-slide-to="1"
-              class="mx-[3px] box-content h-[3px] w-[30px] flex-initial cursor-pointer border-0 border-y-[10px] border-solid border-transparent bg-white bg-clip-padding p-0 -indent-[999px] opacity-50 transition-opacity duration-[600ms] ease-[cubic-bezier(0.25,0.1,0.25,1.0)] motion-reduce:transition-none"
+              class="mx-[3px] box-content h-[12px] w-[12px] rounded-full flex-initial cursor-pointer border-0 border-solid border-transparent bg-white bg-clip-padding p-0 opacity-50 transition-opacity duration-[600ms] ease-[cubic-bezier(0.25,0.1,0.25,1.0)] motion-reduce:transition-none"
               aria-label="Slide 2"
             ></button>
             <button
               type="button"
-              data-te-target="#carouselExampleCrossfade"
+              data-te-target="#carouselExampleCaptions"
               data-te-slide-to="2"
-              class="mx-[3px] box-content h-[3px] w-[30px] flex-initial cursor-pointer border-0 border-y-[10px] border-solid border-transparent bg-white bg-clip-padding p-0 -indent-[999px] opacity-50 transition-opacity duration-[600ms] ease-[cubic-bezier(0.25,0.1,0.25,1.0)] motion-reduce:transition-none"
+              class="mx-[3px] box-content h-[12px] w-[12px] rounded-full flex-initial cursor-pointer border-0 border-solid border-transparent bg-white bg-clip-padding p-0 opacity-50 transition-opacity duration-[600ms] ease-[cubic-bezier(0.25,0.1,0.25,1.0)] motion-reduce:transition-none"
               aria-label="Slide 3"
             ></button>
           </div>
@@ -79,11 +79,35 @@
               data-te-carousel-item
               data-te-carousel-active
             >
-              <img
-                src="../src/img/download.jpg"
-                class="block w-full h-[650px] lg:max-h-[650px] lg:h-[60%]"
-                alt="Wild Landscape"
-              />
+              <a href="#">
+                <img
+                  src="../src/img/download.jpg"
+                  class="block w-full h-[650px] lg:max-h-[650px] lg:h-[60%]"
+                  alt="Wild Landscape"
+              /></a>
+
+              <!-- ============================================= -->
+              <!-- باکس داخل اسلایدر -->
+              <!-- ============================================= -->
+
+              <section class="">
+                <div
+                  class="absolute left-[20px] bottom-[180px] sm:bottom-[170px] sm:mx-auto sm:left-[15%] max-w-[150px] sm:w-[70%] h-[60px] p-[10px] rounded-tl-[20px] text-[14px] font-bold z-[999] bg-secondary-bg"
+                >
+                  <p class="text-center">چراغ ریلی آهنربایی</p>
+                </div>
+                <div
+                  class="absolute max-w-[300px] w-[100%] sm:w-[70%] bottom-[30px] left-[20px] sm:mx-auto sm:left-[15%] bg-white z-[999] p-[40px] flex flex-col gap-[10px] rounded-[20px]"
+                >
+                  <img src="../src/img/logo.png" alt="logo" class="W-[50PX]" />
+                  <button
+                    type="button"
+                    class="bg-secondary-bg rounded-full font-bold text-[12px] p-[8px] max-w-[160PX] w-[100%] mx-auto"
+                  >
+                    <a href="#">مشاهده محصولات</a>
+                  </button>
+                </div>
+              </section>
             </div>
             <!--Second item-->
             <div
@@ -91,11 +115,12 @@
               data-te-carousel-fade
               data-te-carousel-item
             >
-              <img
-                src="../src/img/download1.jpg"
-                class="block w-full h-[650px] lg:max-h-[650px] lg:h-[60%]"
-                alt="Camera"
-              />
+              <a href="#">
+                <img
+                  src="../src/img/download.jpg"
+                  class="block w-full h-[650px] lg:max-h-[650px] lg:h-[60%]"
+                  alt="Wild Landscape"
+              /></a>
             </div>
             <!--Third item-->
             <div
@@ -103,11 +128,12 @@
               data-te-carousel-fade
               data-te-carousel-item
             >
-              <img
-                src="../src/img/download2.jpg"
-                class="block w-full h-[650px] lg:max-h-[650px] lg:h-[60%]"
-                alt="Exotic Fruits"
-              />
+              <a href="#">
+                <img
+                  src="../src/img/download.jpg"
+                  class="block w-full h-[650px] lg:max-h-[650px] lg:h-[60%]"
+                  alt="Wild Landscape"
+              /></a>
             </div>
           </div>
 
@@ -168,29 +194,6 @@
             >
           </button>
         </div>
-
-        <!-- ============================================= -->
-        <!-- باکس داخل اسلایدر -->
-        <!-- ============================================= -->
-
-        <section class="">
-          <div
-            class="absolute left-[20px] bottom-[180px] sm:bottom-[170px] sm:mx-auto sm:left-[15%] max-w-[150px]  sm:w-[70%] h-[60px] p-[10px] rounded-tl-[20px] text-[14px] font-bold z-[999] bg-secondary-bg"
-          >
-            <p class="text-center">چراغ ریلی آهنربایی</p>
-          </div>
-          <div
-            class="absolute max-w-[300px] w-[100%] sm:w-[70%] bottom-[30px] left-[20px] sm:mx-auto sm:left-[15%] bg-white z-[999] p-[40px] flex flex-col gap-[10px] rounded-[20px]"
-          >
-            <img src="../src/img/logo.png" alt="logo" class="W-[50PX]" />
-            <button
-              type="button"
-              class="bg-secondary-bg rounded-full font-bold text-[12px] p-[8px] max-w-[160PX] w-[100%] mx-auto"
-            >
-              <a href="#">مشاهده محصولات</a>
-            </button>
-          </div>
-        </section>
       </div>
     </section>
 
@@ -199,10 +202,10 @@
     <!-- ============================================= -->
 
     <section
-      class="mt-[300px] md:mt-0 flex flex-row lg:flex-wrap justify-center max-w-[1480px] w-[100%] lg:w-[90%] lg:flex-col"
+      class="mt-[300px] md:mt-0 flex flex-row lg:flex-wrap justify-center max-w-[1480px] w-[100%] lg:w-[90%] lg:flex-col sm:mx-auto"
     >
       <div
-        class="flex flex-col mt-[5px] gap-[30px] lg:text-center mr-[10px] w-[50%] lg:w-[100%]"
+        class="flex flex-col mt-[5px] gap-[30px] lg:text-center mr-[10px] w-[50%] lg:w-[100%] sm:mr-0"
       >
         <div class="flex flex-col gap-[15px]">
           <h3 class="text-black font-bold text-[22px]">محصولات زنولند</h3>
@@ -231,7 +234,7 @@
           <video
             src="#"
             controls
-            class="rounded-2xl w-[650px] h-[300px] sm:h-[175px] md:w-[90%] mx-auto"
+            class="rounded-2xl w-[750px] h-[300px] sm:h-[175px] md:w-[90%] mx-auto"
           ></video>
         </div>
       </div>
@@ -241,7 +244,7 @@
         <div class="flex flex-col gap-8 relative sm:gap-4">
           <!--image1-->
           <div class="relative">
-            <img src="./img/5.png" alt="" />
+            <a href="#"> <img src="./img/5.png" alt="" /></a>
             <p
               class="absolute top-0 left-1/2 -translate-x-1/2 text-yellow-500 font-bold mt-4 sm:text-[8px]"
             >
@@ -251,7 +254,9 @@
 
           <!--image2-->
           <div class="relative overflow-hidden custom-box-shadow">
-            <img src="./img/2.png" alt="" class="w-full h-full object-cover" />
+            <a href="#">
+              <img src="./img/2.png" alt="" class="w-full h-full object-cover"
+            /></a>
             <p
               class="absolute bottom-0 left-1/2 -translate-x-1/2 text-yellow-500 font-bold mb-4 sm:text-[8px]"
             >
@@ -262,7 +267,9 @@
         <div class="flex flex-col gap-8 relative sm:gap-4">
           <!--image3-->
           <div class="relative overflow-hidden custom-box-shadow">
-            <img src="./img/2.png" alt="" class="w-full h-full object-cover" />
+            <a href="#">
+              <img src="./img/2.png" alt="" class="w-full h-full object-cover"
+            /></a>
             <p
               class="absolute bottom-0 left-1/2 -translate-x-1/2 text-yellow-500 font-bold mb-4 sm:text-[8px]"
             >
@@ -272,7 +279,7 @@
 
           <!--image4-->
           <div class="relative">
-            <img src="./img/5.png" alt="" />
+            <a href="#"> <img src="./img/5.png" alt="" /></a>
             <p
               class="absolute top-0 left-1/2 -translate-x-1/2 text-yellow-500 font-bold mt-4 sm:text-[8px]"
             >
@@ -288,7 +295,7 @@
     <!-- ============================================= -->
 
     <section
-      class="flex flex-col gap-8 items-center justify-center mt-[150px] w-[100%] max-w-[1480px] lg:max-w-[1024px] sm:w-[80%] sm:mx-auto"
+      class="flex flex-col gap-8 items-center justify-center mt-[150px] w-[100%] max-w-[1480px] lg:max-w-[1024px] sm:w-[80%] sm:mx-auto sm:mt-[70px]"
     >
       <div>
         <h3 class="text-white font-bold text-[22px]">خدمات زنولند</h3>
@@ -297,11 +304,12 @@
         class="flex flex-row lg:flex-wrap items-center justify-center gap-4 mx-auto"
       >
         <div class="relative flex-shrink-0 w-[51%] lg:w-[100%]">
-          <img
-            src="./img/6.png"
-            alt=""
-            class="w-[100%] lg:mx-auto lg:w-[95%] sm:h-auto"
-          />
+          <a href="#">
+            <img
+              src="./img/6.png"
+              alt=""
+              class="w-[100%] lg:mx-auto lg:w-[95%] sm:h-auto"
+          /></a>
           <div
             class="projects absolute bg-main-bg bottom-0 p-[30px] rounded-tl-[40px] shadow-lg shadow-[#4b5563] sm:text-center sm:relative sm:w-[90%] sm:mx-auto"
           >
@@ -326,27 +334,40 @@
         <div
           class="flex flex-row gap-4 relative flex-shrink-0 w-[50%] lg:w-[100%] lg:mx-auto lg:items-center lg:justify-center sm:flex-col"
         >
-          <div
+          <a
+            href="#"
             class="relative overflow-hidden custom-box-shadow w-[48%] sm:w-[100%]"
           >
-            <img src="./img/7.png" alt="" class="w-full h-full object-cover" />
-            <p
-              class="absolute bottom-0 left-0 right-0 text-white font-bold text-center mb-4"
-            >
-              چراغ مگنتی سقفی
-            </p>
-          </div>
-
-          <div
+            <div>
+              <img
+                src="./img/7.png"
+                alt=""
+                class="w-full h-full object-cover"
+              />
+              <p
+                class="absolute bottom-0 left-0 right-0 text-white font-bold text-center mb-4"
+              >
+                چراغ مگنتی سقفی
+              </p>
+            </div>
+          </a>
+          <a
+            href="#"
             class="relative overflow-hidden custom-box-shadow w-[48%] sm:w-[100%]"
           >
-            <img src="./img/8.png" alt="" class="w-full h-full object-cover" />
-            <p
-              class="absolute bottom-0 left-0 right-0 text-white font-bold text-center mb-4"
-            >
-              چراغ مگنتی سقفی
-            </p>
-          </div>
+            <div>
+              <img
+                src="./img/8.png"
+                alt=""
+                class="w-full h-full object-cover"
+              />
+              <p
+                class="absolute bottom-0 left-0 right-0 text-white font-bold text-center mb-4"
+              >
+                چراغ مگنتی سقفی
+              </p>
+            </div>
+          </a>
         </div>
       </div>
     </section>
@@ -356,7 +377,7 @@
     <!-- ============================================= -->
 
     <section
-      class="flex flex-col gap-8 items-center justify-center mt-[150px] mx-auto max-w-[1480px] w-[100%] lg:max-w-[1024px] sm:w-[100%] sm:mx-auto"
+      class="flex flex-col gap-8 items-center justify-center mt-[150px] mx-auto max-w-[1480px] w-[100%] lg:max-w-[1024px] sm:w-[100%] sm:mx-auto sm:mt-[70px]"
     >
       <div>
         <h3 class="text-white font-bold text-[22px]">خدمات زنولند</h3>
@@ -382,29 +403,32 @@
               <a href="#" class="">همه مطالب</a>
             </button>
           </div>
-          <div
+          <a
+            href="#"
             class="w-[50%] sm:w-[100%] relative overflow-hidden custom-box-shadow2"
           >
-            <img
-              src="./img/1.jpg"
-              alt=""
-              class="sm:w-[100%] sm:h-[350px] sm:rounded-[20px]"
-            />
-            <div class="absolute bottom-0 left-0 right-0 p-[10px]">
-              <h3 class="text-white font-bold text-[25px]">نور درمانی</h3>
-              <p class="text-white font-bold">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est
-                doloremque nobis aspernatur sint obcaecati eos fugiat mollitia,
-                ex nulla, quo accusantium architecto sit similique culpa esse
-                dicta deleniti error molestiae!
+            <div>
+              <img
+                src="./img/1.jpg"
+                alt=""
+                class="sm:w-[100%] sm:h-[350px] sm:rounded-[20px]"
+              />
+              <div class="absolute bottom-0 left-0 right-0 p-[10px]">
+                <h3 class="text-white font-bold text-[25px]">نور درمانی</h3>
+                <p class="text-white font-bold">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est
+                  doloremque nobis aspernatur sint obcaecati eos fugiat
+                  mollitia, ex nulla, quo accusantium architecto sit similique
+                  culpa esse dicta deleniti error molestiae!
+                </p>
+              </div>
+              <p
+                class="absolute top-2 left-2 p-1 text-[12px] bg-secondary-bg rounded-full"
+              >
+                چراغ مگنتی
               </p>
             </div>
-            <p
-              class="absolute top-2 left-2 p-1 text-[12px] bg-secondary-bg rounded-full"
-            >
-              چراغ مگنتی
-            </p>
-          </div>
+          </a>
         </div>
 
         <!-- ========================== -->
@@ -459,11 +483,12 @@
                 data-te-carousel-item
                 style="backface-visibility: hidden"
               >
-                <img
-                  src="./img/10.jpg"
-                  class="block w-full rounded-l-[40px] lg:rounded-[20px]"
-                  alt="..."
-                />
+                <a href="#">
+                  <img
+                    src="./img/10.jpg"
+                    class="block w-full rounded-l-[40px] lg:rounded-[20px]"
+                    alt="..."
+                /></a>
                 <div
                   class="absolute flex flex-col gap-[25px] inset-x-[10%] bottom-5 py-5 text-right text-white md:block sm:gap-[0px]"
                 >
@@ -494,11 +519,12 @@
                 data-te-carousel-item
                 style="backface-visibility: hidden"
               >
-                <img
-                  src="./img/10.jpg"
-                  class="block w-full rounded-l-[40px] lg:rounded-[20px]"
-                  alt="..."
-                />
+                <a href="#"
+                  ><img
+                    src="./img/10.jpg"
+                    class="block w-full rounded-l-[40px] lg:rounded-[20px]"
+                    alt="..."
+                /></a>
                 <div
                   class="absolute flex flex-col gap-[25px] inset-x-[10%] bottom-5 py-5 text-right text-white md:block"
                 >
@@ -529,11 +555,12 @@
                 data-te-carousel-item
                 style="backface-visibility: hidden"
               >
-                <img
-                  src="./img/10.jpg"
-                  class="block w-full rounded-l-[40px] lg:rounded-[20px]"
-                  alt="..."
-                />
+                <a href="#">
+                  <img
+                    src="./img/10.jpg"
+                    class="block w-full rounded-l-[40px] lg:rounded-[20px]"
+                    alt="blog-pic"
+                /></a>
                 <div
                   class="absolute flex flex-col gap-[25px] inset-x-[10%] bottom-5 py-5 text-right text-white md:block"
                 >
@@ -569,7 +596,7 @@
     <!-- ============================================= -->
 
     <section
-      class="mt-[100px] flex items-center justify-center w-[100%] mx-auto"
+      class="mt-[100px] flex items-center justify-center w-[100%] mx-auto sm:mt-[70px]"
     >
       <div
         class="rounded-full bg-secondary-bg flex flex-row p-[30px] justify-evenly w-[60%] md:flex-col md:items-center md:justify-center sm:gap-[30px] sm:rounded-[20px] lg:w-[90%]"
@@ -591,7 +618,7 @@
       class="my-[50px] mx-auto p-[60px] w-[100%] bg-white flex flex-row-reverse justify-between mx-auto rounded-[60px] max-w-[1420px] md:flex-col md:justify-center md:items-center md:gap-[55px] sm:w-[90%]"
     >
       <div>
-        <img src="./img/logo.png" alt="logo" />
+        <a href="#"><img src="./img/logo.png" alt="logo" /></a>
       </div>
       <div class="flex flex-col">
         <div class="">
