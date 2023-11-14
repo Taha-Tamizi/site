@@ -69,12 +69,13 @@ body,
 }
 
 @media screen and (max-width: 1024px) {
-  .navbar::after {
+  .navbar::after,
+  .navbar::before,
+  .projects::before,
+  .projects::after {
     display: none;
   }
-  .navbar::before {
-    display: none;
-  }
+
   .info-box {
     height: 437px;
   }
