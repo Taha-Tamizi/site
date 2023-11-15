@@ -1636,12 +1636,12 @@ input[type="range"]:active::-webkit-slider-thumb {
   max-width: 1500px;
 }
 
-.max-w-\[150px\] {
-  max-width: 150px;
-}
-
 .max-w-\[160PX\] {
   max-width: 160PX;
+}
+
+.max-w-\[173px\] {
+  max-width: 173px;
 }
 
 .max-w-\[200px\] {
@@ -1670,6 +1670,15 @@ input[type="range"]:active::-webkit-slider-thumb {
 
 .max-w-full {
   max-width: 100%;
+}
+
+.max-w-\[150px\] {
+  max-width: 150px;
+}
+
+.max-w-min {
+  max-width: -moz-min-content;
+  max-width: min-content;
 }
 
 .flex-auto {
@@ -2233,6 +2242,11 @@ input[type="range"]:active::-webkit-slider-thumb {
   border-top-right-radius: 0.6rem;
 }
 
+.rounded-t-\[20px\] {
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
 .rounded-t-lg {
   border-top-left-radius: 0.5rem;
   border-top-right-radius: 0.5rem;
@@ -2244,10 +2258,6 @@ input[type="range"]:active::-webkit-slider-thumb {
 
 .rounded-br-\[40px\] {
   border-bottom-right-radius: 40px;
-}
-
-.rounded-tl-\[20px\] {
-  border-top-left-radius: 20px;
 }
 
 .rounded-tl-\[40px\] {
@@ -3558,9 +3568,29 @@ input[type="range"]:active::-webkit-slider-thumb {
 /* Webfont: Yekan */
 
 @font-face {
-  font-family: 'Yekan';
+  font-family: 'YekanBold';
 
-  src: url(./);
+  src: url('../dist/fonts/woff/iranyekanwebboldfanum.woff') format('woff'),
+    url('../dist/fonts/ttf/iranyekanwebboldfanum.ttf') format('ttf'),
+    url('../dist/fonts/eot/iranyekanwebboldfanum.eot') format('eot'),
+    url('../dist/fonts/svg/iranyekanwebboldfanum.svg') format('svg');
+
+  font-weight: normal;
+
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'YekanRegular';
+
+  src: url('../dist/fonts/woff/iranyekanwebregularfanum.woff') format('woff'),
+    url('../dist/fonts/ttf/iranyekanwebregularfanum.ttf') format('ttf'),
+    url('../dist/fonts/eot/iranyekanwebregularfanum.eot') format('eot'),
+    url('../dist/fonts/svg/iranyekanwebregularfanum.svg') format('svg');
+
+  font-weight: normal;
+
+  font-style: normal;
 }
 
 body,
@@ -3577,9 +3607,14 @@ body,
   }
 }
 
+.navbar {
+  transition: 0.3s ease;
+}
+
 .navbar.scrolled {
   width: 100%;
   transition: 0.3s ease;
+  background-image: none;
 }
 
 .navbar::before,
@@ -5214,12 +5249,36 @@ body,
     bottom: 0px;
   }
 
-  .sm\:bottom-\[90px\] {
-    bottom: 90px;
+  .sm\:bottom-\[110px\] {
+    bottom: 110px;
   }
 
   .sm\:left-2 {
     left: 0.5rem;
+  }
+
+  .sm\:left-\[30px\] {
+    left: 30px;
+  }
+
+  .sm\:left-\[5\%px\] {
+    left: 5%px;
+  }
+
+  .sm\:left-\[7\%\] {
+    left: 7%;
+  }
+
+  .sm\:top-\[280px\] {
+    top: 280px;
+  }
+
+  .sm\:top-\[60px\] {
+    top: 60px;
+  }
+
+  .sm\:bottom-\[90px\] {
+    bottom: 90px;
   }
 
   .sm\:left-\[15\%\] {
@@ -5230,16 +5289,8 @@ body,
     left: 15.5%;
   }
 
-  .sm\:left-\[30px\] {
-    left: 30px;
-  }
-
-  .sm\:top-\[280px\] {
-    top: 280px;
-  }
-
-  .sm\:top-\[60px\] {
-    top: 60px;
+  .sm\:left-\[\%\] {
+    left: %;
   }
 
   .sm\:mx-auto {
@@ -5271,14 +5322,6 @@ body,
     width: 100%;
   }
 
-  .sm\:w-\[30\%\] {
-    width: 30%;
-  }
-
-  .sm\:w-\[50\%\] {
-    width: 50%;
-  }
-
   .sm\:w-\[70\%\] {
     width: 70%;
   }
@@ -5295,8 +5338,28 @@ body,
     width: 100%;
   }
 
+  .sm\:w-\[30\%\] {
+    width: 30%;
+  }
+
+  .sm\:w-\[50\%\] {
+    width: 50%;
+  }
+
+  .sm\:max-w-\[240px\] {
+    max-width: 240px;
+  }
+
   .sm\:max-w-\[490px\] {
     max-width: 490px;
+  }
+
+  .sm\:max-w-\[\] {
+    max-width: ;
+  }
+
+  .sm\:max-w-\[450px\] {
+    max-width: 450px;
   }
 
   .sm\:flex-col {
