@@ -7,8 +7,8 @@ module.exports = {
   theme: {
     extend: {
       backgroundColor: {
-        'main-bg': '#4b5563',
-        'secondary-bg': '#eab308',
+        'main-bg': '#575757',
+        'secondary-bg': '#f3c017',
       },
       screens: {
         '2xl': { max: '1535px' },
@@ -17,6 +17,9 @@ module.exports = {
         md: { max: '767px' },
         sm: { max: '490px' },
         xsm: { max: '370px' },
+      },
+      fontFamily: {
+        Yekan: ['Yekan'],
       },
     },
   },
