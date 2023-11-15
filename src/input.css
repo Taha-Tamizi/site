@@ -137,3 +137,11 @@ body,
     display: none;
   }
 }
+
+/* .imgss {
+  transition: 0.3s;
+}
+
+.imgss:hover {
+  box-shadow: 0 0 51px red(255, 0, 0, 0.2);
+} */
