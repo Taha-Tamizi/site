@@ -136,19 +136,9 @@ body,
   }
 }
 
-<<<<<<< HEAD
-/* .imgss {
-  transition: 0.3s;
-}
-
-.imgss:hover {
-  box-shadow: 0 0 51px red(255, 0, 0, 0.2);
-} */
-=======
 .video-container {
   background-image: url('./img/download.jpg');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
 }
->>>>>>> 8b3d0537c522ca5a7985a5d817028e50a9fed973
