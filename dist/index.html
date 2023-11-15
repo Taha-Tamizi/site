@@ -51,7 +51,7 @@
         >
           <!--Carousel indicators-->
           <div
-            class="absolute inset-x-0 bottom-0 z-[2] mx-[15%] mb-4 flex list-none justify-center p-0 sm:top-[280px]"
+            class="absolute inset-x-0 bottom-0 z-[2] mx-[15%] mb-4 flex list-none justify-center p-0 sm:bottom-[-165px]"
             data-te-carousel-indicators
           >
             <button
@@ -100,9 +100,11 @@
               <!-- باکس داخل اسلایدر -->
               <!-- ============================================= -->
 
-              <section class="sm:relative sm:top-[60px] sm:left-[30px] sm:max-w-[450px] sm:w-[100%]">
+              <section
+                class="sm:relative sm:top-[60px] sm:left-[30px] sm:max-w-[450px] sm:w-[100%]"
+              >
                 <div
-                  class="absolute left-[20px] bottom-[180px] sm:bottom-[110px] sm:mx-auto sm:left-[7%] max-w-[173px] sm:max-w-[240px] sm:w-[100%] h-[60px] sm:h-[40px] p-[10px] sm:p-[10px] rounded-t-[20px] text-[14px] sm:text-[9px] font-bold z-[999] bg-secondary-bg"
+                  class="absolute left-[20px] bottom-[180px] sm:bottom-[110px] sm:mx-auto sm:left-[8.5%] max-w-[173px] sm:max-w-[200px] sm:w-[100%] h-[60px] sm:h-[40px] p-[10px] sm:p-[10px] rounded-t-[20px] text-[14px] sm:text-[9px] font-bold z-[999] bg-secondary-bg"
                 >
                   <p class="text-center">چراغ ریلی آهنربایی</p>
                 </div>
@@ -139,9 +141,11 @@
               <!-- باکس داخل اسلایدر -->
               <!-- ============================================= -->
 
-              <section class="sm:relative sm:top-[60px] sm:left-[30px]">
+              <section
+                class="sm:relative sm:top-[60px] sm:left-[30px] sm:max-w-[450px] sm:w-[100%]"
+              >
                 <div
-                  class="absolute left-[20px] bottom-[180px] sm:bottom-[110px] sm:mx-auto sm:left-[7%] max-w-[173px] sm:max-w-[240px] sm:w-[100%] h-[60px] sm:h-[40px] p-[10px] sm:p-[10px] rounded-t-[20px] text-[14px] sm:text-[9px] font-bold z-[999] bg-secondary-bg"
+                  class="absolute left-[20px] bottom-[180px] sm:bottom-[110px] sm:mx-auto sm:left-[8.5%] max-w-[173px] sm:max-w-[200px] sm:w-[100%] h-[60px] sm:h-[40px] p-[10px] sm:p-[10px] rounded-t-[20px] text-[14px] sm:text-[9px] font-bold z-[999] bg-secondary-bg"
                 >
                   <p class="text-center">چراغ ریلی آهنربایی</p>
                 </div>
@@ -179,9 +183,11 @@
               <!-- باکس داخل اسلایدر -->
               <!-- ============================================= -->
 
-              <section class="sm:relative sm:top-[60px] sm:left-[30px]">
+              <section
+                class="sm:relative sm:top-[60px] sm:left-[30px] sm:max-w-[450px] sm:w-[100%]"
+              >
                 <div
-                  class="absolute left-[20px] bottom-[180px] sm:bottom-[110px] sm:mx-auto sm:left-[7%] max-w-[173px] sm:max-w-[240px] sm:w-[100%] h-[60px] sm:h-[40px] p-[10px] sm:p-[10px] rounded-t-[20px] text-[14px] sm:text-[9px] font-bold z-[999] bg-secondary-bg"
+                  class="absolute left-[20px] bottom-[180px] sm:bottom-[110px] sm:mx-auto sm:left-[8.5%] max-w-[173px] sm:max-w-[200px] sm:w-[100%] h-[60px] sm:h-[40px] p-[10px] sm:p-[10px] rounded-t-[20px] text-[14px] sm:text-[9px] font-bold z-[999] bg-secondary-bg"
                 >
                   <p class="text-center">چراغ ریلی آهنربایی</p>
                 </div>
@@ -269,7 +275,7 @@
     <!-- ============================================= -->
 
     <section
-      class="mt-[300px] md:mt-0 flex flex-row lg:flex-wrap justify-center max-w-[1500px] w-[100%] lg:w-[100%] lg:flex-col sm:mx-auto"
+      class="mt-[300px] md:mt-[50px] flex flex-row lg:flex-wrap justify-center max-w-[1500px] w-[100%] lg:w-[100%] lg:flex-col sm:mx-auto"
     >
       <div
         class="flex flex-col mt-[5px] gap-[30px] lg:text-center mr-[10px] w-[50%] lg:w-[100%] sm:mr-0"
@@ -287,7 +293,9 @@
             distin
           </p>
         </div>
-        <div class="flex flex-row gap-[10px] mx-auto text-[24px]">
+        <div
+          class="flex flex-row gap-[10px] mx-auto text-[24px] sm:text-[16px]"
+        >
           <button
             type="button"
             class="text-white bg-secondary-bg p-[7px] px-[21px] rounded-full"
@@ -303,15 +311,17 @@
           class="rounded-2xl overflow-hidden w-[750px] h-[300px] sm:h-[130px] md:w-[90%] mx-auto video-container"
         >
           <video
-            src="#"
+            id="myVideo"
+            src="./video/river_creek_stream_nature_flowing_821.mp4"
             controls
             poster="./img/download.jpg"
             class="w-full h-full object-cover"
           ></video>
+          <div id="playButton" class="play-button"></div>
         </div>
       </div>
       <div
-        class="w-[40%] flex flex-row gap-8 text-[20px] mr-[90px] lg:mt-5 lg:w-[90%] lg:mx-auto sm:gap-4"
+        class="w-[40%] flex flex-row gap-8 text-[17px] mr-[90px] lg:mt-5 lg:w-[90%] lg:mx-auto sm:gap-4"
       >
         <div class="flex flex-col gap-8 relative sm:gap-4">
           <!--image1-->
@@ -379,10 +389,12 @@
     <!-- ============================================= -->
 
     <section
-      class="flex flex-col gap-8 items-center justify-center mt-[150px] w-[100%] mx-auto max-w-[1480px] lg:w-[100%] lg:mx-auto lg:mt-[70px] sm:w-full"
+      class="flex flex-col gap-8 items-center justify-center mt-[100px] w-[100%] mx-auto max-w-[1480px] lg:w-[100%] lg:mx-auto lg:mt-[70px] sm:w-full"
     >
       <div>
-        <h3 class="text-white font-bold p-5 text-[40px]">خدمات زنولند</h3>
+        <h3 class="text-white font-bold p-5 text-[40px] mb-[50px] lg:mb-[35px]">
+          خدمات زنولند
+        </h3>
       </div>
       <div
         class="flex flex-row lg:flex-wrap items-center justify-center gap-4 mx-auto"
@@ -392,7 +404,7 @@
             <img
               src="./img/6.png"
               alt=""
-              class="w-[100%] lg:mx-auto lg:w-[100%] h-[405px] lg:h-auto"
+              class="w-[100%] lg:mx-auto lg:w-[100%] lg:h-auto"
           /></a>
           <div
             class="projects absolute bg-main-bg bottom-0 py-[30px] pl-[40px] rounded-tl-[40px] shadow-lg shadow-[#575757] sm:text-center sm:relative sm:w-[90%] sm:px-0 sm:mx-auto"
@@ -402,7 +414,7 @@
             >
               پروژه های پیاده سازی شده
             </h4>
-            <div class="flex justify-evenly gap-5 text-[20px] sm:text-[12px]">
+            <div class="flex justify-evenly gap-5 text-[20px] sm:text-[11px]">
               <a
                 href="#"
                 class="bg-secondary-bg p-[5px] px-4 rounded-full sm:p-4 sm:py-1"
@@ -422,7 +434,7 @@
           </div>
         </div>
         <div
-          class="flex flex-row gap-4 relative flex-shrink-0 w-[51%] text-[25px] lg:w-[100%] lg:mx-auto lg:items-center lg:justify-center sm:flex-col"
+          class="flex flex-row gap-4 relative flex-shrink-0 w-[49%] text-[25px] lg:w-[100%] lg:mx-auto lg:items-center lg:justify-center sm:flex-col"
         >
           <a
             href="#"
@@ -467,31 +479,37 @@
     <!-- ============================================= -->
 
     <section
-      class="flex flex-col gap-8 items-center justify-center mt-[150px] mx-auto max-w-[1450px] w-[100%] lg:max-w-[1024px] sm:w-[100%] sm:mx-auto sm:mt-[70px]"
+      class="flex flex-col gap-8 items-center justify-center mt-[100px] mx-auto max-w-[1450px] w-[100%] lg:max-w-[1024px] sm:w-[100%] sm:mx-auto sm:mt-[70px]"
     >
       <div>
-        <h3 class="text-white font-bold text-[40px]">خدمات زنولند</h3>
+        <h3 class="text-white font-bold text-[40px] mb-[60px] lg:mb-[35px]">
+          خدمات زنولند
+        </h3>
       </div>
       <div
         class="flex flex-row lg:flex-wrap items-center justify-center gap-4 mx-auto"
       >
         <div
-          class="flex flex-row gap-4 flex-shrink-0 w-[51%] lg:w-[90%] lg:mx-auto lg:items-center lg:justify-center sm:flex-col"
+          class="flex flex-row gap-4 flex-shrink-0 w-[51%] h-[365px] lg:h-auto lg:w-[90%] lg:mx-auto lg:items-center lg:justify-center sm:flex-col"
         >
           <div
             class="info-box bg-secondary-bg rounded-r-[40px] flex flex-col items-center justify-center gap-1 w-[50%] sm:h-[330px] sm:gap-1 sm:rounded-[20px] sm:w-[100%]"
           >
             <svg></svg>
-            <h3 class="font-bold text-[40px]">جدیدترین مطالب</h3>
-            <p class="mr-[15px] text-gray-700 text-[20px]">
-              محصولات روشنايى با برند زنولد توسط آموختكان حوزه نورپردازى و
-              روشنايى وافراد جامعه به بازار عرضه شده است .
-            </p>
-            <button
-              class="p-[5px] w-[120px] text-[25px] font-bold border-solid border-2 border-black rounded-full md:p-[0px] md:mb-[0px]"
+            <div
+              class="text-center mb-[15px] flex flex-col justify-center items-center gap-5"
             >
-              <a href="#" class="">همه مطالب</a>
-            </button>
+              <h3 class="font-bold text-[40px]">جدیدترین مطالب</h3>
+              <p class="mr-[15px] text-gray-700 text-[20px]">
+                محصولات روشنايى با برند زنولد توسط آموختكان حوزه نورپردازى و
+                روشنايى وافراد جامعه به بازار عرضه شده است .
+              </p>
+              <button
+                class="p-[5px] px-[20px] text-[20px] font-bold border-solid border-2 border-black rounded-full md:p-[0px] md:mb-[0px]"
+              >
+                <a href="#" class="">همه مطالب</a>
+              </button>
+            </div>
           </div>
           <a
             href="#"
@@ -513,7 +531,7 @@
                 </p>
               </div>
               <p
-                class="absolute top-2 left-2 p-1 text-[12px] bg-secondary-bg rounded-full text-[20px]"
+                class="absolute top-2 left-2 p-1 text-[12px] bg-secondary-bg rounded-full"
               >
                 چراغ مگنتی
               </p>
@@ -525,7 +543,7 @@
         <!-- blog slider -->
         <!-- ========================== -->
 
-        <div class="flex-shrink-0 w-[50.8%] lg:w-[90%]">
+        <div class="flex-shrink-0 w-[50%] lg:w-[90%]">
           <div
             id="carouselExampleCaptions"
             class="relative"
@@ -603,7 +621,7 @@
                   </p>
                 </div>
                 <p
-                  class="absolute top-2 left-5 sm:left-2 p-1 text-[20px] bg-secondary-bg rounded-full"
+                  class="absolute top-2 left-5 sm:left-2 p-1 text-[12px] bg-secondary-bg rounded-full"
                 >
                   چراغ مگنتی
                 </p>
@@ -644,7 +662,7 @@
                   </p>
                 </div>
                 <p
-                  class="absolute top-2 left-5 sm:left-2 p-1 text-[20px] bg-secondary-bg rounded-full"
+                  class="absolute top-2 left-5 sm:left-2 p-1 text-[12px] bg-secondary-bg rounded-full"
                 >
                   چراغ مگنتی
                 </p>
@@ -685,7 +703,7 @@
                   </p>
                 </div>
                 <p
-                  class="absolute top-2 left-5 sm:left-2 p-1 text-[20px] bg-secondary-bg rounded-full"
+                  class="absolute top-2 left-5 sm:left-2 p-1 text-[12px] bg-secondary-bg rounded-full"
                 >
                   چراغ مگنتی
                 </p>
@@ -706,11 +724,11 @@
       <div
         class="shadow-lg rounded-full bg-secondary-bg flex flex-row p-[40px] justify-evenly w-[80%] md:flex-col md:items-center md:justify-center sm:gap-[30px] sm:rounded-[20px] lg:w-[90%]"
       >
-        <h3 class="font-bold text-[40px]">
+        <h3 class="font-bold text-[30px]">
           برای دریافت كشاوره رايگان از زنولد به اين قسمت مراجعه كنيد.
         </h3>
         <button
-          class="bg-white rounded-full p-[5px] py-[10px] w-[150px] sm:shadow-lg text-[22px]"
+          class="bg-white rounded-full p-[5px] py-[10px] w-[150px] sm:shadow-lg text-[18px]"
         >
           <a href="#">اینجا کیلک کنید</a>
         </button>
@@ -732,11 +750,11 @@
           <ul
             class="flex flex-row gap-[35px] sm:gap-[5px] sm:flex-col sm:items-center"
           >
-            <li><a href="#">صفحه اصلی</a></li>
-            <li><a href="#">محصولات</a></li>
-            <li><a href="#">تماس با ما</a></li>
-            <li><a href="#">وبلاگ</a></li>
-            <li><a href="#">پروژه‌ها</a></li>
+            <li class="hover:text-yellow-400"><a href="#">صفحه اصلی</a></li>
+            <li class="hover:text-yellow-400"><a href="#">محصولات</a></li>
+            <li class="hover:text-yellow-400"><a href="#">تماس با ما</a></li>
+            <li class="hover:text-yellow-400"><a href="#">وبلاگ</a></li>
+            <li class="hover:text-yellow-400"><a href="#">پروژه ها</a></li>
           </ul>
         </div>
         <div class="text-center mt-[60px]">

@@ -19,7 +19,7 @@
     url('../dist/fonts/ttf/iranyekanwebregularfanum.ttf') format('ttf'),
     url('../dist/fonts/eot/iranyekanwebregularfanum.eot') format('eot'),
     url('../dist/fonts/svg/iranyekanwebregularfanum.svg') format('svg');
-     font-weight: normal;
+  font-weight: normal;
   font-style: normal;
 }
 
@@ -29,6 +29,22 @@ body,
   background-image: url(./img/bg.png);
   background-repeat: repeat;
   background-position: center;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'YekanBold';
+}
+
+p,
+a,
+ul,
+li {
+  font-family: 'YekanRegular';
 }
 
 @media screen and (max-width: 1023px) {
@@ -43,6 +59,7 @@ body,
   width: 100%;
   transition: 0.3s ease;
   background-image: none;
+  border-radius: 0px;
 }
 .navbar::before,
 .navbar::after {
@@ -61,7 +78,7 @@ body,
 
 .navbar::after {
   bottom: -40px;
-  right: 80px;
+  right: 10px;
 }
 
 .hide-elements::before,
@@ -163,4 +180,40 @@ body,
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  position: relative;
+}
+
+.play-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 60px;
+  height: 60px;
+  background-color: #f3c017;
+  border-radius: 50%;
+  cursor: pointer;
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0px rgba(255, 255, 255, 0.7);
+  }
+  50% {
+    box-shadow: 0 0 0 15px rgba(255, 255, 255, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0px rgba(255, 255, 255, 0.7);
+  }
+}
+
+.play-button:before {
+  content: '\25B6';
+  font-size: 2em;
+  color: #333;
+  position: absolute;
+  top: 48%;
+  left: 55%;
+  transform: translate(-50%, -50%);
 }
