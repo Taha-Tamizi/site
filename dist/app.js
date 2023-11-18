@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', function () {
       var navbar = document.getElementById('navbar')
 
       if (window.scrollY > 5) {
-        navbar.classList.add('scrolled', 'fixed') 
+        navbar.classList.add('scrolled', 'fixed')
       } else {
         navbar.classList.remove('scrolled', 'fixed')
       }
@@ -47,16 +47,18 @@ document.addEventListener('DOMContentLoaded', function () {
 
     popupOverlay.style.display = 'flex'
 
-    popupVideo.play()
+    popupVideo.controls = true
   })
 
   closeButton.addEventListener('click', function () {
-    popupOverlay.style.display = 'none'
-
     popupVideo.pause()
     popupVideo.currentTime = 0
 
-    mainVideo.play()
+    mainVideo.pause()
+
+    popupOverlay.style.display = 'none'
+
+    popupVideo.controls = false
   })
 
   popupOverlay.addEventListener('click', function (event) {
