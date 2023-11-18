@@ -5415,6 +5415,10 @@ figure {
     bottom: 110px;
   }
 
+  .sm\:left-\[11\%\] {
+    left: 11%;
+  }
+
   .sm\:left-\[30px\] {
     left: 30px;
   }
@@ -5456,6 +5460,10 @@ figure {
     width: 100%;
   }
 
+  .sm\:w-\[65\%\] {
+    width: 65%;
+  }
+
   .sm\:w-\[70\%\] {
     width: 70%;
   }
@@ -5472,6 +5480,18 @@ figure {
     width: 100%;
   }
 
+  .sm\:w-\[75\%\] {
+    width: 75%;
+  }
+
+  .sm\:w-\[66\%\] {
+    width: 66%;
+  }
+
+  .sm\:max-w-\[250px\] {
+    max-width: 250px;
+  }
+
   .sm\:max-w-\[275px\] {
     max-width: 275px;
   }
@@ -5482,6 +5502,15 @@ figure {
 
   .sm\:max-w-\[490px\] {
     max-width: 490px;
+  }
+
+  .sm\:max-w-\[260px\] {
+    max-width: 260px;
+  }
+
+  .sm\:translate-x-0 {
+    --tw-translate-x: 0px;
+    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
   }
 
   .sm\:flex-col {
