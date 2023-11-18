@@ -3641,7 +3641,9 @@ li {
   transition: 0.3s ease;
   background-image: none;
   border-radius: 0px;
-  box-shadow: 0px 0px 2px black;
+  box-shadow: 1px 9px 13px -8px rgba(0, 0, 0, 0.69);
+  -webkit-box-shadow: 1px 9px 13px -8px rgba(0, 0, 0, 0.69);
+  -moz-box-shadow: 1px 9px 13px -8px rgba(0, 0, 0, 0.69);
 }
 
 #navbar.fixed {
@@ -3704,6 +3706,12 @@ li {
   width: 40px;
   border-bottom-right-radius: 50%;
   box-shadow: 15px 0px 0px 0px #575757;
+}
+
+.projects-links > a:hover {
+  box-shadow: -1px 1px 5px 1px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: -1px 1px 5px 1px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -1px 1px 5px 1px rgba(0, 0, 0, 0.75);
 }
 
 @media screen and (max-width: 1024px) {
@@ -3895,6 +3903,14 @@ figure {
   color: white;
   font-size: 1.5em;
   z-index: 1000;
+}
+
+/* button hover */
+
+.custom-box-shadow:hover {
+  box-shadow: -1px 1px 5px 1px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: -1px 1px 5px 1px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -1px 1px 5px 1px rgba(0, 0, 0, 0.75);
 }
 
 .selection\:bg-transparent *::-moz-selection {
