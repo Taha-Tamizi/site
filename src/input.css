@@ -2,6 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
+
+
+
 /* Webfont: Yekan */
 @font-face {
   font-family: 'YekanBold';
@@ -330,7 +333,7 @@ figure {
 
 /* button hover */
 
-.custom-box-shadow:hover {
+.custom-hover-shadow:hover {
   box-shadow: -1px 1px 5px 1px rgba(0, 0, 0, 0.75);
   -webkit-box-shadow: -1px 1px 5px 1px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: -1px 1px 5px 1px rgba(0, 0, 0, 0.75);
