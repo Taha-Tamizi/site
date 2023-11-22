@@ -58,6 +58,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
     popupOverlay.style.display = 'none'
 
+    playButton.style.display = 'block'
+
     popupVideo.controls = false
   })
 

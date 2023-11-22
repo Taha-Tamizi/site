@@ -5424,12 +5424,16 @@ figure {
     bottom: -125px;
   }
 
+  .sm\:bottom-\[-50px\] {
+    bottom: -50px;
+  }
+
   .sm\:bottom-\[0px\] {
     bottom: 0px;
   }
 
-  .sm\:bottom-\[110px\] {
-    bottom: 110px;
+  .sm\:bottom-\[120px\] {
+    bottom: 120px;
   }
 
   .sm\:left-\[11\%\] {
@@ -5609,10 +5613,6 @@ figure {
 
   .sm\:text-\[8px\] {
     font-size: 8px;
-  }
-
-  .sm\:text-\[9px\] {
-    font-size: 9px;
   }
 
   .sm\:shadow-lg {
