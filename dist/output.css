@@ -2925,6 +2925,10 @@ input[type="range"]:active::-webkit-slider-thumb {
   font-size: 14px;
 }
 
+.text-\[15px\] {
+  font-size: 15px;
+}
+
 .text-\[16px\] {
   font-size: 16px;
 }
@@ -3908,9 +3912,9 @@ figure {
 /* button hover */
 
 .custom-hover-shadow:hover {
-  box-shadow: -1px 1px 5px 1px rgba(0, 0, 0, 0.75);
-  -webkit-box-shadow: -1px 1px 5px 1px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: -1px 1px 5px 1px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 13px 0px rgba(0, 0, 0, 0.4);
+  -webkit-box-shadow: 0px 0px 13px 0px rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: 0px 0px 13px 0px rgba(0, 0, 0, 0.4);
 }
 
 .selection\:bg-transparent *::-moz-selection {
@@ -5448,6 +5452,10 @@ figure {
     top: 60px;
   }
 
+  .sm\:bottom-\[115px\] {
+    bottom: 115px;
+  }
+
   .sm\:mx-auto {
     margin-left: auto;
     margin-right: auto;
@@ -5459,6 +5467,10 @@ figure {
 
   .sm\:mt-\[70px\] {
     margin-top: 70px;
+  }
+
+  .sm\:hidden {
+    display: none;
   }
 
   .sm\:h-\[150px\] {
@@ -5483,6 +5495,10 @@ figure {
 
   .sm\:w-\[70\%\] {
     width: 70%;
+  }
+
+  .sm\:w-\[80\%\] {
+    width: 80%;
   }
 
   .sm\:w-\[90\%\] {
@@ -5541,6 +5557,10 @@ figure {
     gap: 5px;
   }
 
+  .sm\:gap-\[18px\] {
+    gap: 18px;
+  }
+
   .sm\:overflow-visible {
     overflow: visible;
   }
@@ -5565,6 +5585,10 @@ figure {
     padding: 20px;
   }
 
+  .sm\:p-\[4px\] {
+    padding: 4px;
+  }
+
   .sm\:p-\[5px\] {
     padding: 5px;
   }
@@ -5572,6 +5596,11 @@ figure {
   .sm\:px-0 {
     padding-left: 0px;
     padding-right: 0px;
+  }
+
+  .sm\:px-\[8px\] {
+    padding-left: 8px;
+    padding-right: 8px;
   }
 
   .sm\:py-1 {
@@ -5613,6 +5642,10 @@ figure {
 
   .sm\:text-\[8px\] {
     font-size: 8px;
+  }
+
+  .sm\:text-\[15px\] {
+    font-size: 15px;
   }
 
   .sm\:shadow-lg {
@@ -5745,10 +5778,6 @@ figure {
 
   .lg\:w-\[100\%\] {
     width: 100%;
-  }
-
-  .lg\:w-\[85\%\] {
-    width: 85%;
   }
 
   .lg\:w-\[90\%\] {
