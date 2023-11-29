@@ -9,37 +9,40 @@
   </head>
   <body class="bg-main-bg grid items-center justify-center">
     <!-- ============================================= -->
+    <!-- header section -->
+    <!-- ============================================= -->
+    <header class="right-0 text-[22px] sticky top-0 z-[1000]">
+      <nav
+        id="navbar"
+        class="navbar flex justify-between items-center lg:block z-[999] absolute lg:top-0 right-0 w-[50%] p-[35px] bg-main-bg rounded-bl-[16px] lg:w-[100%] lg:mr-0 lg:rounded-none lg:h-[50px] lg:right-0"
+      >
+        <div
+          class="hidden lg:flex flex-row justify-between translate-y-[-12px]"
+        >
+          <div>
+            <img src="./img/menu.png" alt="" class="w-[25px]" />
+          </div>
+          <div>
+            <img src="./img/logo.png" alt="" class="w-[120px]" />
+          </div>
+        </div>
+        <ul class="nav-list flex flex-row gap-5 text-white lg:hidden">
+          <li class="hover:text-yellow-400"><a href="#">صفحه اصلی</a></li>
+          <li class="hover:text-yellow-400"><a href="#">محصولات</a></li>
+          <li class="hover:text-yellow-400"><a href="#">تماس با ما</a></li>
+          <li class="hover:text-yellow-400"><a href="#">وبلاگ</a></li>
+          <li class="hover:text-yellow-400"><a href="#">پروژه ها</a></li>
+        </ul>
+        <div class="logo">
+          <img src="./img/logo.png" alt="" class="w-[120px] lg:hidden" />
+        </div>
+      </nav>
+    </header>
+
+    <!-- ============================================= -->
     <!-- hero section -->
     <!-- ============================================= -->
-    <section class="relative w-[100%]">
-      <div class="h-[500px] relative right-0 text-[22px]">
-        <nav
-          id="navbar"
-          class="navbar flex justify-between items-center lg:block z-[999] absolute lg:fixed right-0 w-[50%] p-[35px] bg-main-bg rounded-bl-[16px] lg:w-[100%] lg:mr-0 lg:rounded-none lg:h-[50px] lg:right-0"
-        >
-          <div
-            class="hidden lg:flex flex-row justify-between translate-y-[-12px]"
-          >
-            <div>
-              <img src="./img/menu.png" alt="" class="w-[25px]" />
-            </div>
-            <div>
-              <img src="./img/logo.png" alt="" class="w-[120px]" />
-            </div>
-          </div>
-          <ul class="nav-list flex flex-row gap-5 text-white lg:hidden">
-            <li class="hover:text-yellow-400"><a href="#">صفحه اصلی</a></li>
-            <li class="hover:text-yellow-400"><a href="#">محصولات</a></li>
-            <li class="hover:text-yellow-400"><a href="#">تماس با ما</a></li>
-            <li class="hover:text-yellow-400"><a href="#">وبلاگ</a></li>
-            <li class="hover:text-yellow-400"><a href="#">پروژه ها</a></li>
-          </ul>
-          <div class="logo">
-            <img src="./img/logo.png" alt="" class="w-[120px] lg:hidden" />
-          </div>
-        </nav>
-      </div>
-
+    <section class="relative w-[100%] h-[500px]">
       <!-- ============================================= -->
       <!-- SLIDER -->
       <!-- ============================================= -->
@@ -291,21 +294,21 @@
     <!-- ============================================= -->
 
     <section
-      class="mt-[300px] md:mt-[0px] flex flex-row lg:flex-wrap justify-center max-w-[1500px] w-[100%] lg:w-[100%] lg:flex-col sm:mx-auto"
+      class="mt-[300px] flex flex-row lg:flex-wrap justify-center max-w-[1500px] w-[100%] lg:w-[100%] lg:flex-col lg:mx-auto lg:mt-[150px]"
     >
       <div
-        class="flex flex-col mt-[5px] gap-[30px] lg:text-center mr-[10px] w-[50%] lg:w-[100%] sm:mr-0"
+        class="flex flex-col mt-[5px] gap-[30px] lg:text-center mr-[10px] w-[50%] lg:w-[100%] lg:mr-0"
       >
         <div class="flex flex-col gap-[15px]">
           <h3 class="text-white font-bold text-[40px]">محصولات زنولند</h3>
           <h4
-            class="text-white font-bold text-[20px] sm:text-[16px] sm:max-w-[490px] sm:w-[95%] sm:mx-auto"
+            class="text-white font-bold text-[20px] lg:text-[16px] lg:max-w-[490px] lg:w-[95%] lg:mx-auto"
           >
             زنولند ارئه دهنده محصولات چراغ خطی، چراغ مگنتی ، چراغ ریلی، چراغ
             سقفی و ...
           </h4>
           <p
-            class="text-gray-800 text-[18px] sm:text-[12px] sm:w-[90%] sm:mx-auto"
+            class="text-gray-800 text-[18px] sm:text-[12px] lg:w-[90%] lg:mx-auto"
           >
             چراغ مگنتی (چراغ آهنربایی) یا مولتی ترک سیستم روشنایی جدیدی از چراغ
             های ال ای دی است که با تکنولوژی مگنت طراحی می شود و نحوه کاربرد و
@@ -318,11 +321,11 @@
         >
           <button
             type="button"
-            class="text-white bg-secondary-bg p-[7px] px-[21px] rounded-[15px] sm:p-[4px] sm:px-[8px] custom-hover-shadow"
+            class="text-white bg-secondary-bg p-[7px] px-[21px] rounded-[15px] lg:p-[4px] lg:px-[8px] custom-hover-shadow"
           >
             <a href="#">مشاهده همه محصولات</a></button
           ><button
-            class="text-white flex items-center gap-1 p-[7px] px-[21px] border-solid border-2 border-white rounded-[15px] sm:p-[4px] sm:px-[8px] custom-hover-shadow"
+            class="text-white flex items-center gap-1 p-[7px] px-[21px] border-solid border-2 border-white rounded-[15px] lg:p-[4px] lg:px-[8px] custom-hover-shadow"
           >
             <a href="#">مشاوره رایگان</a>
             <img src="./img/arrow.png" alt="" class="w-[32px]" />
@@ -330,7 +333,6 @@
         </div>
 
         <div id="popup" class="popup-overlay">
-          <span id="closeButton" class="close-button">×</span>
           <div class="popup-container">
             <video
               id="popupVideo"
@@ -338,6 +340,7 @@
               src="./video/river_creek_stream_nature_flowing_821.mp4"
               poster="./img/download.jpg"
             ></video>
+            <span id="closeButton" class="close-button">×</span>
           </div>
         </div>
 
@@ -355,9 +358,9 @@
         </div>
       </div>
       <div
-        class="w-[40%] flex flex-row gap-8 text-[17px] mr-[90px] lg:mt-5 lg:w-[90%] lg:mx-auto sm:gap-4"
+        class="w-[40%] flex flex-row gap-8 text-[17px] mr-[90px] lg:mt-5 lg:w-[90%] lg:mx-auto lg:gap-4"
       >
-        <div class="flex flex-col gap-8 relative sm:gap-4 hover14">
+        <div class="flex flex-col gap-8 relative lg:gap-4 hover14">
           <!--image1-->
           <div class="relative">
             <a href="#">
@@ -389,7 +392,7 @@
             </div>
           </a>
         </div>
-        <div class="flex flex-col gap-8 relative sm:gap-4 hover14">
+        <div class="flex flex-col gap-8 relative lg:gap-4 hover14">
           <!--image3-->
           <a href="#">
             <div class="relative overflow-hidden custom-box-shadow">
@@ -430,7 +433,7 @@
     <!-- ============================================= -->
 
     <section
-      class="flex flex-col gap-8 items-center justify-center mt-[100px] w-[100%] mx-auto max-w-[1480px] lg:w-[100%] lg:mx-auto lg:mt-[70px] sm:w-full"
+      class="flex flex-col gap-8 items-center justify-center mt-[100px] w-[100%] mx-auto max-w-[1480px] lg:w-[100%] lg:mx-auto lg:mt-[70px] lg:w-full"
     >
       <div>
         <h3 class="text-white font-bold p-5 text-[40px] mb-[50px] lg:mb-[35px]">
@@ -451,7 +454,7 @@
             </figure>
           </a>
           <div
-            class="projects absolute bg-main-bg bottom-0 py-[30px] pl-[40px] rounded-tl-[40px] shadow-lg shadow-[#575757] sm:text-center sm:relative sm:w-[90%] sm:px-0 sm:mx-auto z-[900]"
+            class="projects absolute bg-main-bg bottom-0 py-[30px] pl-[40px] rounded-tl-[40px] shadow-lg shadow-[#575757] lg:text-center lg:relative lg:w-[90%] lg:px-0 lg:mx-auto z-[900]"
           >
             <h4
               class="text-white font-bold text-[35px] sm:text-[20px] mb-[15px]"
@@ -480,11 +483,11 @@
           </div>
         </div>
         <div
-          class="flex flex-row gap-4 relative flex-shrink-0 w-[49%] text-[25px] lg:w-[100%] lg:mx-auto lg:items-center lg:justify-center sm:flex-col"
+          class="services flex flex-row gap-4 relative flex-shrink-0 w-[49%] text-[25px] md:w-[100%] lg:mx-auto lg:items-center lg:justify-center sm:flex-col"
         >
           <a
             href="#"
-            class="relative overflow-hidden custom-box-shadow w-[48%] sm:w-[90%] hover14"
+            class="relative overflow-hidden custom-box-shadow w-[48%] lg:w-[90%] hover14"
           >
             <div>
               <figure>
@@ -503,7 +506,7 @@
           </a>
           <a
             href="#"
-            class="relative overflow-hidden custom-box-shadow w-[48%] sm:w-[90%] hover14"
+            class="relative overflow-hidden custom-box-shadow w-[48%] lg:w-[90%] hover14"
           >
             <div>
               <figure>
@@ -529,7 +532,7 @@
     <!-- ============================================= -->
 
     <section
-      class="flex flex-col gap-8 items-center justify-center mt-[100px] mx-auto max-w-[1450px] w-[100%] lg:max-w-[1024px] sm:w-[100%] sm:mx-auto sm:mt-[70px]"
+      class="flex flex-col gap-8 items-center justify-center mt-[100px] mx-auto max-w-[1450px] w-[100%] lg:w-[100%] lg:mx-auto lg:mt-[70px]"
     >
       <div>
         <h3 class="text-white font-bold text-[40px] mb-[60px] lg:mb-[35px]">
@@ -543,11 +546,11 @@
           class="flex flex-row gap-4 flex-shrink-0 w-[51%] h-[365px] lg:h-auto lg:w-[90%] lg:mx-auto lg:items-center lg:justify-center sm:flex-col"
         >
           <div
-            class="info-box bg-secondary-bg rounded-r-[16px] flex flex-col items-center justify-center gap-1 w-[50%] sm:h-[330px] sm:gap-1 sm:rounded-[16px] sm:w-[100%]"
+            class="info-box bg-secondary-bg rounded-r-[16px] flex flex-col items-center justify-center gap-1 w-[50%] lg:h-[330px] lg:gap-1 lg:rounded-[16px] lg:w-[100%]"
           >
             <img src="./img/book.png" alt="" />
             <div
-              class="text-center mb-[15px] flex flex-col justify-center items-center gap-5 sm:gap-[18px]"
+              class="text-center mb-[15px] flex flex-col justify-center items-center gap-5 lg:gap-[18px]"
             >
               <h3 class="font-bold text-[38px]">جدیدترین مطالب</h3>
               <p class="mr-[15px] text-gray-700 text-[20px]">
@@ -564,13 +567,13 @@
           </div>
           <a
             href="#"
-            class="w-[50%] sm:w-[100%] relative overflow-hidden custom-box-shadow2"
+            class="w-[50%] lg:w-[100%] relative overflow-hidden custom-box-shadow2"
           >
             <div>
               <img
                 src="./img/1.jpg"
                 alt=""
-                class="sm:w-[100%] sm:h-[330px] lg:rounded-[16px]"
+                class="lg:w-[100%] lg:h-[330px] lg:rounded-[16px]"
               />
               <div class="absolute bottom-0 left-0 right-0 p-[10px]">
                 <h3 class="text-white font-bold text-[30px]">نور درمانی</h3>
@@ -774,16 +777,16 @@
     <!-- ============================================= -->
 
     <section
-      class="mt-[100px] flex items-center justify-center w-[100%] mx-auto sm:mt-[70px] sm:text-center"
+      class="mt-[100px] flex items-center justify-center w-[100%] mx-auto lg:mt-[70px] lg:text-center"
     >
       <div
-        class="shadow-lg rounded-[16px] bg-secondary-bg flex flex-row p-[40px] justify-evenly w-[80%] md:flex-col md:items-center md:justify-center sm:gap-[30px] sm:rounded-[20px] lg:w-[90%]"
+        class="shadow-lg rounded-[16px] bg-secondary-bg flex flex-row p-[40px] justify-evenly w-[80%] md:flex-col md:items-center md:justify-center lg:gap-[30px] lg:rounded-[20px] lg:w-[90%]"
       >
         <h3 class="font-bold text-[30px]">
           برای دریافت كشاوره رايگان از زنولد به اين قسمت مراجعه كنيد.
         </h3>
         <button
-          class="bg-white rounded-[15px] p-[5px] py-[10px] w-[150px] sm:shadow-lg text-[18px] custom-hover-shadow"
+          class="bg-white rounded-[15px] p-[5px] py-[10px] w-[150px] lg:shadow-lg text-[18px] custom-hover-shadow"
         >
           <a href="#">اینجا کیلک کنید</a>
         </button>
@@ -795,7 +798,7 @@
     <!-- ============================================= -->
 
     <footer
-      class="my-[50px] mx-auto text-[22px] p-[60px] w-[100%] bg-white flex flex-row-reverse justify-between rounded-[16px] max-w-[1420px] md:flex-col md:justify-center md:items-center md:gap-[55px] sm:w-[90%]"
+      class="my-[50px] mx-auto text-[22px] p-[60px] w-[100%] bg-white flex flex-row-reverse justify-between rounded-[16px] max-w-[1420px] lg:flex-col lg:justify-center lg:items-center lg:gap-[55px] lg:w-[90%]"
     >
       <div>
         <a href="#"><img src="./img/logo.png" alt="logo" /></a>
