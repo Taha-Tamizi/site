@@ -1604,6 +1604,10 @@ input[type="range"]:active::-webkit-slider-thumb {
   width: 100vw;
 }
 
+.w-\[95\%\] {
+  width: 95%;
+}
+
 .min-w-0 {
   min-width: 0px;
 }
@@ -3926,7 +3930,7 @@ figure {
   }
 }
 
-@media screen and (min-width: 490px) and (max-width: 1400px) {
+@media screen and (min-width: 490px) and (max-width: 1380px) {
   .services {
     width: 90%;
   }
@@ -5629,7 +5633,7 @@ figure {
   }
 }
 
-@media (max-width: 1400px) {
+@media (max-width: 1380px) {
   .lg\:relative {
     position: relative;
   }
@@ -5661,10 +5665,6 @@ figure {
 
   .lg\:mt-5 {
     margin-top: 1.25rem;
-  }
-
-  .lg\:mt-\[150px\] {
-    margin-top: 150px;
   }
 
   .lg\:mt-\[70px\] {

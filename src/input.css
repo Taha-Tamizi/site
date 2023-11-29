@@ -342,7 +342,7 @@ figure {
   }
 }
 
-@media screen and (min-width: 490px) and (max-width: 1400px) {
+@media screen and (min-width: 490px) and (max-width: 1380px) {
   .services {
     width: 90%;
   }
