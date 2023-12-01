@@ -91,7 +91,7 @@ li {
 
 .navbar::after {
   bottom: -40px;
-  right: 0px;
+  right: 7px;
 }
 
 .hide-elements::before,

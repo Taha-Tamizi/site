@@ -1100,6 +1100,10 @@ input[type="range"]:active::-webkit-slider-thumb {
   margin-right: 10px;
 }
 
+.mr-\[115px\] {
+  margin-right: 115px;
+}
+
 .mr-\[15px\] {
   margin-right: 15px;
 }
@@ -1110,10 +1114,6 @@ input[type="range"]:active::-webkit-slider-thumb {
 
 .mr-\[8px\] {
   margin-right: 8px;
-}
-
-.mr-\[90px\] {
-  margin-right: 90px;
 }
 
 .mr-auto {
@@ -1540,10 +1540,6 @@ input[type="range"]:active::-webkit-slider-thumb {
   width: 48%;
 }
 
-.w-\[49\%\] {
-  width: 49%;
-}
-
 .w-\[4px\] {
   width: 4px;
 }
@@ -1588,6 +1584,10 @@ input[type="range"]:active::-webkit-slider-thumb {
   width: 80%;
 }
 
+.w-\[99\%\] {
+  width: 99%;
+}
+
 .w-\[calc\(100\%-100px\)\] {
   width: calc(100% - 100px);
 }
@@ -1602,10 +1602,6 @@ input[type="range"]:active::-webkit-slider-thumb {
 
 .w-screen {
   width: 100vw;
-}
-
-.w-\[95\%\] {
-  width: 95%;
 }
 
 .min-w-0 {
@@ -1626,10 +1622,6 @@ input[type="range"]:active::-webkit-slider-thumb {
 
 .min-w-\[64px\] {
   min-width: 64px;
-}
-
-.max-w-\[1420px\] {
-  max-width: 1420px;
 }
 
 .max-w-\[1450px\] {
@@ -3680,7 +3672,7 @@ li {
 
 .navbar::after {
   bottom: -40px;
-  right: 0px;
+  right: 7px;
 }
 
 .hide-elements::before,
@@ -5471,6 +5463,10 @@ figure {
     top: 60px;
   }
 
+  .sm\:bottom-\[112px\] {
+    bottom: 112px;
+  }
+
   .sm\:mx-auto {
     margin-left: auto;
     margin-right: auto;
@@ -5598,6 +5594,10 @@ figure {
 
   .md\:mb-\[0px\] {
     margin-bottom: 0px;
+  }
+
+  .md\:mt-0 {
+    margin-top: 0px;
   }
 
   .md\:block {
