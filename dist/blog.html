@@ -8,11 +8,11 @@
   </head>
   <body class="bg-main-bg">
     <!-- ============================================= -->
-    <!-- main section -->
+    <!-- main-section -->
     <!-- ============================================= -->
     <main class="max-w-[1480px] w-full mx-auto">
       <!-- ============================================= -->
-      <!-- header section -->
+      <!-- nav-section -->
       <!-- ============================================= -->
       <header class="right-0 text-[20px] sticky top-0 z-[1000]">
         <nav
@@ -43,19 +43,19 @@
       </header>
 
       <!-- ============================================= -->
-      <!-- blog-hero section -->
+      <!-- blog-header section -->
       <!-- ============================================= -->
       <section
-        class="relative top-[31px] w-[100%] bg-secondary-bg rounded-2xl h-64"
+        class="relative top-[31px] w-full bg-secondary-bg rounded-2xl h-64 lg:top-[90px] lg:w-[95%] mx-auto"
       >
-        <div class="absolute top-4 left-8">
+        <div class="absolute top-4 left-8 lg:left-0 lg:px-4">
           <img src="./img/logo.png" alt="" />
         </div>
         <!-- <div><img src="" alt=""></div> -->
         <div
           class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
         >
-          <h2 class="text-[3.25rem]">مجله زنولد</h2>
+          <h2 class="text-[52px] lg:text-[32px]">مجله زنولد</h2>
         </div>
         <div class="absolute bottom-[-25px] left-1/2 -translate-x-1/2">
           <svg
@@ -65,7 +65,7 @@
             width="30"
             height="30"
             viewBox="0 0 30 30"
-            class="relative top-[0px] right-10 inline"
+            class="absolute top-5 right-2"
           >
             <path
               d="M 13 3 C 7.4889971 3 3 7.4889971 3 13 C 3 18.511003 7.4889971 23 13 23 C 15.396508 23 17.597385 22.148986 19.322266 20.736328 L 25.292969 26.707031 A 1.0001 1.0001 0 1 0 26.707031 25.292969 L 20.736328 19.322266 C 22.148986 17.597385 23 15.396508 23 13 C 23 7.4889971 18.511003 3 13 3 z M 13 5 C 17.430123 5 21 8.5698774 21 13 C 21 17.430123 17.430123 21 13 21 C 8.5698774 21 5 17.430123 5 13 C 5 8.5698774 8.5698774 5 13 5 z"
@@ -76,10 +76,312 @@
             name=""
             id=""
             placeholder="جستجو ..."
-            class="w-[650px] rounded-2xl py-6 pr-10"
+            class="w-[650px] rounded-2xl py-6 pr-10 lg:w-[100%]"
           />
         </div>
       </section>
+
+      <!-- ============================================= -->
+      <!-- blog-hero section -->
+      <!-- ============================================= -->
+
+      <section class="mt-28 flex flex-col mx-auto w-[95%] gap-12 lg:mt-36">
+        <div
+          class="flex flex-row gap-10 text-gray-300 items-center justify-center"
+        >
+          <a href="#">روشنایی</a>
+          <a href="#">معماری</a>
+          <a href="#">مفاهیم پایه</a>
+        </div>
+        <div class="flex flex-row items-center relative lg:flex-col gap-5">
+          <div
+            class="bg-white flex flex-col w-[50%] rounded-2xl p-8 gap-4 lg:w-full lg:items-center"
+          >
+            <p class="border w-max p-2 rounded-2xl px-4">مفاهیم پایه</p>
+            <h3
+              class="text-4xl tracking-normal leading-[55px] font-extrabold lg:text-[28px]"
+            >
+              تفاوت میان منابع نور dim to warm و tunable white چیست؟
+            </h3>
+            <p class="leading-[40px] text-[18px] lg:text-[14px]">
+              راهنمایی برای نورپردازی دفتر کار خانگی چطور نورپردازی را درست را
+              برای نورپردازى دفتر کار خانگی انجام دهيم با وجود آمدن شرایطی كه
+              راهنمایی برای نورپردازى دفتر كار خانگی چطور نورپردازى را درست را
+              براى نورپردازى دفتر كار خانكى انجام دهيم با به وجود آمدن شرايطى كه
+            </p>
+            <div
+              class="flex flex-row justify-between items-center my-[25px] lg:flex-col lg:gap-8 lg:my-0"
+            >
+              <div class="flex flex-row items-center gap-[10px]">
+                <img src="./img/blog-logo.png" alt="" />
+                <div class="flex flex-col items-center justify-center gap-1">
+                  <h5>توسط :تیم محتوای زنولد</h5>
+                  <p class="text-[12px]">تاریخ انتشار : 11 آذر 1402</p>
+                </div>
+              </div>
+              <a
+                href="#"
+                class="border border-solid border-black py-1 px-4 rounded-xl flex flex-row gap-3"
+              >
+                <button type="button">مشاهده مطالب</button>
+                <img src="./img/left.png" alt="" class="w-[32px]" />
+              </a>
+            </div>
+          </div>
+          <div
+            class="w-[50%] absolute left-[10px] z-[100] rounded-2xl hover14 lg:w-full lg:static"
+          >
+            <figure>
+              <a href="#">
+                <img
+                  src="./img/download.jpg"
+                  alt=""
+                  class="rounded-2xl h-[500px] w-full"
+                />
+              </a>
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============================================= -->
+      <!-- blog-post section -->
+      <!-- ============================================= -->
+
+      <section
+        class="mt-32 w-[95%] flex flex-row flex-wrap gap-y-32 gap-x-[55px] mx-auto justify-center lg:gap-8"
+      >
+        <a href="#" class="group flex flex-col hover14">
+          <figure><img src="./img/1.jpg" alt="" /></figure>
+          <div class="flex flex-col gap-5 w-[400px] pt-5 md:w-full">
+            <p class="text-white">مفاهیم پایه</p>
+            <h3 class="text-yellow-400 text-[24px]">
+              راهنمایی برای دفتر کار خانگی
+            </h3>
+            <p class="text-white leading-[35px]">
+              راهنمایی برای نورپردازی دفتر کار خانگی چطور نورپردازی را درست را
+              برای نورپردازى دفتر کار خانگی انجام دهيم با وجود آمدن شرایطی كه
+            </p>
+
+            <button
+              type="button"
+              class="text-white border border-solid border-white py-1 px-4 rounded-xl w-max mx-auto group-hover:bg-secondary-bg transition-all duration-300 group-hover:border-none"
+            >
+              مشاهده مطالب
+            </button>
+          </div>
+        </a>
+        <a href="#" class="group flex flex-col hover14">
+          <figure><img src="./img/1.jpg" alt="" /></figure>
+          <div class="flex flex-col gap-5 w-[400px] pt-5 md:w-full">
+            <p class="text-white">مفاهیم پایه</p>
+            <h3 class="text-yellow-400 text-[24px]">
+              راهنمایی برای دفتر کار خانگی
+            </h3>
+            <p class="text-white leading-[35px]">
+              راهنمایی برای نورپردازی دفتر کار خانگی چطور نورپردازی را درست را
+              برای نورپردازى دفتر کار خانگی انجام دهيم با وجود آمدن شرایطی كه
+            </p>
+
+            <button
+              type="button"
+              class="text-white border border-solid border-white py-1 px-4 rounded-xl w-max mx-auto group-hover:bg-secondary-bg transition-all duration-300 group-hover:border-none"
+            >
+              مشاهده مطالب
+            </button>
+          </div>
+        </a>
+        <a href="#" class="group flex flex-col hover14">
+          <figure><img src="./img/1.jpg" alt="" /></figure>
+          <div class="flex flex-col gap-5 w-[400px] pt-5 md:w-full">
+            <p class="text-white">مفاهیم پایه</p>
+            <h3 class="text-yellow-400 text-[24px]">
+              راهنمایی برای دفتر کار خانگی
+            </h3>
+            <p class="text-white leading-[35px]">
+              راهنمایی برای نورپردازی دفتر کار خانگی چطور نورپردازی را درست را
+              برای نورپردازى دفتر کار خانگی انجام دهيم با وجود آمدن شرایطی كه
+            </p>
+
+            <button
+              type="button"
+              class="text-white border border-solid border-white py-1 px-4 rounded-xl w-max mx-auto group-hover:bg-secondary-bg transition-all duration-300 group-hover:border-none"
+            >
+              مشاهده مطالب
+            </button>
+          </div>
+        </a>
+        <a href="#" class="group flex flex-col hover14">
+          <figure><img src="./img/1.jpg" alt="" /></figure>
+          <div class="flex flex-col gap-5 w-[400px] pt-5 md:w-full">
+            <p class="text-white">مفاهیم پایه</p>
+            <h3 class="text-yellow-400 text-[24px]">
+              راهنمایی برای دفتر کار خانگی
+            </h3>
+            <p class="text-white leading-[35px]">
+              راهنمایی برای نورپردازی دفتر کار خانگی چطور نورپردازی را درست را
+              برای نورپردازى دفتر کار خانگی انجام دهيم با وجود آمدن شرایطی كه
+            </p>
+
+            <button
+              type="button"
+              class="text-white border border-solid border-white py-1 px-4 rounded-xl w-max mx-auto group-hover:bg-secondary-bg transition-all duration-300 group-hover:border-none"
+            >
+              مشاهده مطالب
+            </button>
+          </div>
+        </a>
+        <a href="#" class="group flex flex-col hover14">
+          <figure><img src="./img/1.jpg" alt="" /></figure>
+          <div class="flex flex-col gap-5 w-[400px] pt-5 md:w-full">
+            <p class="text-white">مفاهیم پایه</p>
+            <h3 class="text-yellow-400 text-[24px]">
+              راهنمایی برای دفتر کار خانگی
+            </h3>
+            <p class="text-white leading-[35px]">
+              راهنمایی برای نورپردازی دفتر کار خانگی چطور نورپردازی را درست را
+              برای نورپردازى دفتر کار خانگی انجام دهيم با وجود آمدن شرایطی كه
+            </p>
+
+            <button
+              type="button"
+              class="text-white border border-solid border-white py-1 px-4 rounded-xl w-max mx-auto group-hover:bg-secondary-bg transition-all duration-300 group-hover:border-none"
+            >
+              مشاهده مطالب
+            </button>
+          </div>
+        </a>
+        <a href="#" class="group flex flex-col hover14">
+          <figure><img src="./img/1.jpg" alt="" /></figure>
+          <div class="flex flex-col gap-5 w-[400px] pt-5 md:w-full">
+            <p class="text-white">مفاهیم پایه</p>
+            <h3 class="text-yellow-400 text-[24px]">
+              راهنمایی برای دفتر کار خانگی
+            </h3>
+            <p class="text-white leading-[35px]">
+              راهنمایی برای نورپردازی دفتر کار خانگی چطور نورپردازی را درست را
+              برای نورپردازى دفتر کار خانگی انجام دهيم با وجود آمدن شرایطی كه
+            </p>
+
+            <button
+              type="button"
+              class="text-white border border-solid border-white py-1 px-4 rounded-xl w-max mx-auto group-hover:bg-secondary-bg transition-all duration-300 group-hover:border-none"
+            >
+              مشاهده مطالب
+            </button>
+          </div>
+        </a>
+      </section>
+
+      <!-- ============================================= -->
+      <!-- مشاوره -->
+      <!-- ============================================= -->
+
+      <section
+        class="mt-[100px] flex items-center justify-center w-[100%] mx-auto lg:mt-[70px] lg:text-center"
+      >
+        <div
+          class="shadow-lg rounded-[16px] bg-secondary-bg flex flex-row p-[40px] justify-evenly w-[80%] md:flex-col md:items-center md:justify-center lg:gap-[30px] lg:rounded-[20px] lg:w-[90%]"
+        >
+          <h3 class="font-bold text-[30px]">
+            برای دریافت كشاوره رايگان از زنولد به اين قسمت مراجعه كنيد.
+          </h3>
+          <button
+            class="bg-white rounded-[15px] p-[5px] py-[10px] w-[150px] lg:shadow-lg text-[18px] custom-hover-shadow"
+          >
+            <a href="#">اینجا کیلک کنید</a>
+          </button>
+        </div>
+      </section>
+
+      <!-- ============================================= -->
+      <!-- footer -->
+      <!-- ============================================= -->
+
+      <footer
+        class="my-[50px] mx-auto text-[22px] p-[60px] w-[100%] bg-white flex flex-row-reverse justify-between rounded-[16px] lg:flex-col lg:justify-center lg:items-center lg:gap-[55px] lg:w-[90%]"
+      >
+        <div>
+          <a href="#"><img src="./img/logo.png" alt="logo" /></a>
+        </div>
+        <div class="flex flex-col">
+          <div class="">
+            <ul
+              class="flex flex-row gap-[35px] sm:gap-[5px] sm:flex-col sm:items-center"
+            >
+              <li class="hover:text-yellow-400"><a href="#">صفحه اصلی</a></li>
+              <li class="hover:text-yellow-400"><a href="#">محصولات</a></li>
+              <li class="hover:text-yellow-400"><a href="#">تماس با ما</a></li>
+              <li class="hover:text-yellow-400"><a href="#">وبلاگ</a></li>
+              <li class="hover:text-yellow-400"><a href="#">پروژه ها</a></li>
+            </ul>
+          </div>
+          <div class="text-center mt-[60px]">
+            <p>تمام حقوق این وبسایت محفوظ میباشد.</p>
+          </div>
+        </div>
+        <div>
+          <ul class="flex flex-row">
+            <li>
+              <a href="#"
+                ><?xml version="1.0" ?><!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'>
+                <svg
+                  enable-background="new 0 0 56.693 56.693"
+                  height="25.693px"
+                  id="Layer_1"
+                  version="1.1"
+                  viewBox="0 0 56.693 56.693"
+                  width="56.693px"
+                  xml:space="preserve"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                >
+                  <path
+                    d="M52.837,15.065c-1.811,0.805-3.76,1.348-5.805,1.591c2.088-1.25,3.689-3.23,4.444-5.592c-1.953,1.159-4.115,2-6.418,2.454  c-1.843-1.964-4.47-3.192-7.377-3.192c-5.581,0-10.106,4.525-10.106,10.107c0,0.791,0.089,1.562,0.262,2.303  c-8.4-0.422-15.848-4.445-20.833-10.56c-0.87,1.492-1.368,3.228-1.368,5.082c0,3.506,1.784,6.6,4.496,8.412  c-1.656-0.053-3.215-0.508-4.578-1.265c-0.001,0.042-0.001,0.085-0.001,0.128c0,4.896,3.484,8.98,8.108,9.91  c-0.848,0.23-1.741,0.354-2.663,0.354c-0.652,0-1.285-0.063-1.902-0.182c1.287,4.015,5.019,6.938,9.441,7.019  c-3.459,2.711-7.816,4.327-12.552,4.327c-0.815,0-1.62-0.048-2.411-0.142c4.474,2.869,9.786,4.541,15.493,4.541  c18.591,0,28.756-15.4,28.756-28.756c0-0.438-0.009-0.875-0.028-1.309C49.769,18.873,51.483,17.092,52.837,15.065z"
+                  /></svg
+              ></a>
+            </li>
+            <li>
+              <a href="#"
+                ><?xml version="1.0" ?><!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'>
+                <svg
+                  enable-background="new 0 0 56.693 56.693"
+                  height="25.693px"
+                  id="Layer_1"
+                  version="1.1"
+                  viewBox="0 0 56.693 56.693"
+                  width="56.693px"
+                  xml:space="preserve"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                >
+                  <path
+                    d="M52.837,15.065c-1.811,0.805-3.76,1.348-5.805,1.591c2.088-1.25,3.689-3.23,4.444-5.592c-1.953,1.159-4.115,2-6.418,2.454  c-1.843-1.964-4.47-3.192-7.377-3.192c-5.581,0-10.106,4.525-10.106,10.107c0,0.791,0.089,1.562,0.262,2.303  c-8.4-0.422-15.848-4.445-20.833-10.56c-0.87,1.492-1.368,3.228-1.368,5.082c0,3.506,1.784,6.6,4.496,8.412  c-1.656-0.053-3.215-0.508-4.578-1.265c-0.001,0.042-0.001,0.085-0.001,0.128c0,4.896,3.484,8.98,8.108,9.91  c-0.848,0.23-1.741,0.354-2.663,0.354c-0.652,0-1.285-0.063-1.902-0.182c1.287,4.015,5.019,6.938,9.441,7.019  c-3.459,2.711-7.816,4.327-12.552,4.327c-0.815,0-1.62-0.048-2.411-0.142c4.474,2.869,9.786,4.541,15.493,4.541  c18.591,0,28.756-15.4,28.756-28.756c0-0.438-0.009-0.875-0.028-1.309C49.769,18.873,51.483,17.092,52.837,15.065z"
+                  /></svg
+              ></a>
+            </li>
+            <li>
+              <a href="#"
+                ><?xml version="1.0" ?><!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'>
+                <svg
+                  enable-background="new 0 0 56.693 56.693"
+                  height="25.693px"
+                  id="Layer_1"
+                  version="1.1"
+                  viewBox="0 0 56.693 56.693"
+                  width="56.693px"
+                  xml:space="preserve"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                >
+                  <path
+                    d="M52.837,15.065c-1.811,0.805-3.76,1.348-5.805,1.591c2.088-1.25,3.689-3.23,4.444-5.592c-1.953,1.159-4.115,2-6.418,2.454  c-1.843-1.964-4.47-3.192-7.377-3.192c-5.581,0-10.106,4.525-10.106,10.107c0,0.791,0.089,1.562,0.262,2.303  c-8.4-0.422-15.848-4.445-20.833-10.56c-0.87,1.492-1.368,3.228-1.368,5.082c0,3.506,1.784,6.6,4.496,8.412  c-1.656-0.053-3.215-0.508-4.578-1.265c-0.001,0.042-0.001,0.085-0.001,0.128c0,4.896,3.484,8.98,8.108,9.91  c-0.848,0.23-1.741,0.354-2.663,0.354c-0.652,0-1.285-0.063-1.902-0.182c1.287,4.015,5.019,6.938,9.441,7.019  c-3.459,2.711-7.816,4.327-12.552,4.327c-0.815,0-1.62-0.048-2.411-0.142c4.474,2.869,9.786,4.541,15.493,4.541  c18.591,0,28.756-15.4,28.756-28.756c0-0.438-0.009-0.875-0.028-1.309C49.769,18.873,51.483,17.092,52.837,15.065z"
+                  /></svg
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </footer>
     </main>
     <script src="./app.js"></script>
   </body>
