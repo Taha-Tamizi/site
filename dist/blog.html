@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>وبلاگ</title>
+    <link rel="stylesheet" href="./output.css" />
+  </head>
+  <body class="bg-main-bg">
+    <!-- ============================================= -->
+    <!-- main section -->
+    <!-- ============================================= -->
+    <main class="max-w-[1480px] w-full mx-auto">
+      <!-- ============================================= -->
+      <!-- header section -->
+      <!-- ============================================= -->
+      <header class="right-0 text-[20px] sticky top-0 z-[1000]">
+        <nav
+          id="navbar"
+          class="navbar flex justify-between items-center lg:block z-[999] absolute lg:top-0 right-0 w-[75%] p-[35px] bg-main-bg rounded-bl-[16px] lg:w-[100%] lg:mr-0 lg:rounded-none lg:h-[50px] lg:right-0"
+        >
+          <div
+            class="hidden lg:flex flex-row justify-between translate-y-[-12px]"
+          >
+            <div>
+              <img src="./img/menu.png" alt="" class="w-[25px]" />
+            </div>
+            <div>
+              <img src="./img/logo.png" alt="" class="w-[120px]" />
+            </div>
+          </div>
+          <ul class="nav-list flex flex-row gap-5 text-white lg:hidden">
+            <li class="hover:text-yellow-400"><a href="#">صفحه اصلی</a></li>
+            <li class="hover:text-yellow-400"><a href="#">محصولات</a></li>
+            <li class="hover:text-yellow-400"><a href="#">تماس با ما</a></li>
+            <li class="hover:text-yellow-400"><a href="#">وبلاگ</a></li>
+            <li class="hover:text-yellow-400"><a href="#">پروژه ها</a></li>
+          </ul>
+          <div class="logo">
+            <img src="./img/logo.png" alt="" class="w-[120px] lg:hidden" />
+          </div>
+        </nav>
+      </header>
+
+      <!-- ============================================= -->
+      <!-- blog-hero section -->
+      <!-- ============================================= -->
+      <section
+        class="relative top-[31px] w-[100%] bg-secondary-bg rounded-2xl h-64"
+      >
+        <div class="absolute top-4 left-8">
+          <img src="./img/logo.png" alt="" />
+        </div>
+        <!-- <div><img src="" alt=""></div> -->
+        <div
+          class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
+        >
+          <h2 class="text-[3.25rem]">مجله زنولد</h2>
+        </div>
+        <div class="absolute bottom-[-25px] left-1/2 -translate-x-1/2">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            x="0px"
+            y="0px"
+            width="30"
+            height="30"
+            viewBox="0 0 30 30"
+            class="relative top-[0px] right-10 inline"
+          >
+            <path
+              d="M 13 3 C 7.4889971 3 3 7.4889971 3 13 C 3 18.511003 7.4889971 23 13 23 C 15.396508 23 17.597385 22.148986 19.322266 20.736328 L 25.292969 26.707031 A 1.0001 1.0001 0 1 0 26.707031 25.292969 L 20.736328 19.322266 C 22.148986 17.597385 23 15.396508 23 13 C 23 7.4889971 18.511003 3 13 3 z M 13 5 C 17.430123 5 21 8.5698774 21 13 C 21 17.430123 17.430123 21 13 21 C 8.5698774 21 5 17.430123 5 13 C 5 8.5698774 8.5698774 5 13 5 z"
+            ></path>
+          </svg>
+          <input
+            type="search"
+            name=""
+            id=""
+            placeholder="جستجو ..."
+            class="w-[650px] rounded-2xl py-6 pr-10"
+          />
+        </div>
+      </section>
+    </main>
+    <script src="./app.js"></script>
+  </body>
+</html>
