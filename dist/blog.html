@@ -48,7 +48,7 @@
       <section
         class="relative top-[31px] w-full bg-secondary-bg rounded-2xl h-64 lg:top-[90px] lg:w-[95%] mx-auto"
       >
-        <div class="absolute top-4 left-8 lg:left-0 lg:px-4">
+        <div class="absolute top-4 left-8 lg:hidden">
           <img src="./img/logo.png" alt="" />
         </div>
         <!-- <div><img src="" alt=""></div> -->
@@ -76,7 +76,7 @@
             name=""
             id=""
             placeholder="جستجو ..."
-            class="w-[650px] rounded-2xl py-6 pr-10 lg:w-[100%]"
+            class="w-[650px] rounded-2xl py-6 px-10 md:w-[270px]"
           />
         </div>
       </section>
@@ -93,16 +93,21 @@
           <a href="#">معماری</a>
           <a href="#">مفاهیم پایه</a>
         </div>
-        <div class="flex flex-row items-center relative lg:flex-col gap-5">
+        <div
+          class="flex flex-row items-center relative lg:flex-col-reverse gap-5"
+        >
           <div
             class="bg-white flex flex-col w-[50%] rounded-2xl p-8 gap-4 lg:w-full lg:items-center"
           >
-            <p class="border w-max p-2 rounded-2xl px-4">مفاهیم پایه</p>
-            <h3
-              class="text-4xl tracking-normal leading-[55px] font-extrabold lg:text-[28px]"
+            <p class="border w-max p-2 rounded-2xl px-4 lg:hidden">
+              مفاهیم پایه
+            </p>
+            <a
+              href="#"
+              class="text-4xl tracking-normal leading-[55px] font-extrabold lg:text-[28px] transition-all duration-200 hover:text-[#f3c017]"
             >
               تفاوت میان منابع نور dim to warm و tunable white چیست؟
-            </h3>
+            </a>
             <p class="leading-[40px] text-[18px] lg:text-[14px]">
               راهنمایی برای نورپردازی دفتر کار خانگی چطور نورپردازی را درست را
               برای نورپردازى دفتر کار خانگی انجام دهيم با وجود آمدن شرایطی كه
@@ -149,7 +154,7 @@
       <!-- ============================================= -->
 
       <section
-        class="mt-32 w-[95%] flex flex-row flex-wrap gap-y-32 gap-x-[55px] mx-auto justify-center lg:gap-8"
+        class="mt-32 w-[95%] flex flex-row flex-wrap gap-y-32 gap-x-[58px] mx-auto lg:gap-8 lg:mt-16"
       >
         <a href="#" class="group flex flex-col hover14">
           <figure><img src="./img/1.jpg" alt="" /></figure>
