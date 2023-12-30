@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>وبلاگ</title>
+    <link rel="stylesheet" href="./output.css" />
+  </head>
+  <body class="bg-main-bg">
+    <!-- ============================================= -->
+    <!-- main-section -->
+    <!-- ============================================= -->
+    <main class="max-w-[2000px] w-full mx-auto">
+      <!-- ============================================= -->
+      <!-- nav-section -->
+      <!-- ============================================= -->
+      <header class="right-0 text-[20px] sticky top-0 z-[1000] w-full">
+        <nav
+          id="navbar"
+          class="navbar flex justify-between items-center lg:block z-[999] lg:top-0 right-0 w-[100%] p-[35px] bg-main-bg lg:w-[100%] lg:mr-0 lg:rounded-none lg:h-[50px] lg:right-0"
+          style="position: fixed"
+        >
+          <div
+            class="hidden lg:flex flex-row justify-between translate-y-[-12px]"
+          >
+            <div>
+              <img src="./img/menu.png" alt="" class="w-[25px]" />
+            </div>
+            <div>
+              <img src="./img/logo.png" alt="" class="w-[120px]" />
+            </div>
+          </div>
+          <ul class="nav-list flex flex-row gap-5 text-white lg:hidden">
+            <li class="hover:text-yellow-400"><a href="#">صفحه اصلی</a></li>
+            <li class="hover:text-yellow-400"><a href="#">محصولات</a></li>
+            <li class="hover:text-yellow-400"><a href="#">تماس با ما</a></li>
+            <li class="hover:text-yellow-400"><a href="#">وبلاگ</a></li>
+            <li class="hover:text-yellow-400"><a href="#">پروژه ها</a></li>
+          </ul>
+          <div class="">
+            <img src="./img/logo.png" alt="" class="w-[200px] lg:hidden" />
+          </div>
+        </nav>
+      </header>
+
+      <!-- ============================================= -->
+      <!-- product-header section -->
+      <!-- ============================================= -->
+      <section
+        class="relative top-[130px] w-full flex flex-row bg-gray-300 h-[1200px] mx-auto border-b-yellow-400 border-b-[30px]"
+      >
+        <div class="w-[50%]">
+          <img src="./img/4.png" alt="" class="w-full pt-7 pl-7" />
+        </div>
+        <div
+          class="w-[50%] h-max py-16 rounded-br-[80px] product bg-main-bg flex flex-col gap-6 items-center text-center px-32 text-white"
+        >
+          <h1 class="text-[40px]">
+            "چراغ خطی مدل L12 براساس نصب روکار و آویز طراحی شده است"
+          </h1>
+          <p class="text-[22px] text-gray-300 leading-[70px]">
+            كاربرد جراغ: به عنوان نوردكوراتيو در فضاهاى مسكونى، ادارى، تجارى و
+            ... به عنوان تامين به عنوان تامين كننده نوراصلى براى فضاهاى مسكونى
+          </p>
+          <div
+            class="flex flex-row gap-[10px] my-7 mx-auto text-[24px] sm:text-[16px]"
+          >
+            <button
+              class="text-white flex items-center gap-5 p-[7px] px-[21px] lg:p-[4px] lg:px-[8px]"
+            >
+              <a href="#">مشاوره رایگان</a>
+              <img src="./img/arrow.png" alt="" class="w-[28px]" />
+            </button>
+            <button
+              type="button"
+              class="text-black bg-white flex items-center gap-5 p-[7px] px-[21px] rounded-[15px] lg:p-[4px] lg:px-[8px] custom-hover-shadow"
+            >
+              <img src="./img/left.png" alt="" class="w-[28px]" />
+              <a href="#">مشاهده همه محصولات</a>
+            </button>
+          </div>
+          <div class="flex flex-row gap-10">
+            <div class="flex flex-row items-center gap-5">
+              <img src="./img/arrow.png" alt="" class="w-[28px]" />
+              <h5>کد محصول: MRP-2M</h5>
+            </div>
+            <div class="flex flex-row items-center gap-5">
+              <img src="./img/arrow.png" alt="" class="w-[28px]" />
+              <h5>دسته بندی: Multi Track System</h5>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============================================= -->
+      <!-- product-slider section -->
+      <!-- ============================================= -->
+
+      <section class="relative top-[-250px] text-center">
+        <h2 class="text-black mb-[50px] text-[40px]">تصاویر محصول</h2>
+        <div id="container">
+          <div id="slider-container">
+            <span onclick="slideRight()" class="btn"></span>
+            <div id="slider">
+              <div class="slide">
+                <span><img src="./img/2.png" alt="" /></span>
+              </div>
+              <div class="slide">
+                <span><img src="./img/2.png" alt="" /></span>
+              </div>
+              <div class="slide">
+                <span><img src="./img/2.png" alt="" /></span>
+              </div>
+              <div class="slide">
+                <span><img src="./img/2.png" alt="" /></span>
+              </div>
+              <div class="slide">
+                <span><img src="./img/2.png" alt="" /></span>
+              </div>
+              <div class="slide">
+                <span><img src="./img/2.png" alt="" /></span>
+              </div>
+              <div class="slide">
+                <span><img src="./img/2.png" alt="" /></span>
+              </div>
+              <div class="slide">
+                <span><img src="./img/2.png" alt="" /></span>
+              </div>
+              <div class="slide">
+                <span><img src="./img/2.png" alt="" /></span>
+              </div>
+              <div class="slide">
+                <span><img src="./img/2.png" alt="" /></span>
+              </div>
+            </div>
+            <span onclick="slideLeft()" class="btn"></span>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============================================= -->
+      <!-- product-video section -->
+      <!-- ============================================= -->
+        <section class="flex flex-row w-full ">
+          <div class="w-[50%] bg-gray-300 rounded-l-[50px] py-6 pl-6">
+               <div id="popup" class="popup-overlay">
+            <div class="popup-container">
+              <video
+                id="popupVideo"
+                class="popup-video"
+                src="./video/river_creek_stream_nature_flowing_821.mp4"
+                poster="./img/download.jpg"
+              ></video>
+              <span id="closeButton" class="close-button">×</span>
+            </div>
+          </div>
+
+          <div
+            class="rounded-l-[50px] overflow-hidden  sm:h-[150px] lg:w-[90%] mx-auto video-container relative"
+          >
+            <video
+              id="myVideo"
+              src="./video/river_creek_stream_nature_flowing_821.mp4"
+              poster="./img/download.jpg"
+              class="w-full h-full object-cover"
+              controls
+            ></video>
+            <button id="playButton" class="play-button">&#9654;</button>
+          </div>
+        </div>
+          </div>
+          <div class="text-center w-[50%] px-14 flex flex-col gap-14 items-center">
+            <h1 class="text-[40px] text-white">
+            "چراغ خطی مدل L12 براساس نصب روکار و آویز طراحی شده است"
+          </h1>
+            <p class="text-[22px] text-gray-300 leading-[50px]">جراغ خطى مدل L12 براساس نصب روكار وآويز طراحى شده است. ايعاد فريم جراغ
+خطى مدل L12: سايز بروفيل 55 ميلى متردر 75 ميلى مترو بدون محدوديت طول
+
+در هر سايز طول مورد نياز بروزه است. بدنه اين جراغ خطى از جنس آلومينيوم است
+
+كه باتكنولوزى اكسترود توليد شده است. بدنه آلومينيوم آنودايز شده است. دفيوزر
+
+جنس PMMA است. كاربرد جراغ: به عنوان نور دكوراتيو در فضاهاى مسكونى، ادارى،
+تجارى و ... ، به عنوان تامين كننده نور اصلى براى فضاهاى مسكونى، ادارى، تجارى</p>
+          </div>
+        </section>
+
+      <!-- ============================================= -->
+      <!-- product-faq section -->
+      <!-- ============================================= -->
+      <section class="w-full mt-[200px] flex flex-row items-center justify-center mx-auto">
+        <div class="w-[50%] mr-[100px]">
+          <h1 class="text-[40px] text-yellow-400 text-center mb-20">پرسش و پاسخ متداول</h1>
+          <div class="flex flex-col gap-8">
+            <h3 class="text-[36px] text-white">تامين روشنايى راهرو ها وورودى هاى ساختمان ؟</h3>
+            <p class="text-[22px] text-gray-300">براساس نصب روكار وآويز نور خطى طراحى شدء است. ايعاد قريم جراغ جرا
+سايز عرض قريم 55 ميلى مترو ارتفاع 75 ميل</p>
+            <h3 class="text-[36px] text-white">تامين روشنايى راهرو ها وورودى هاى ساختمان ؟</h3>
+            <p class="text-[22px] text-gray-300">براساس نصب روكار وآويز نور خطى طراحى شدء است. ايعاد قريم جراغ جرا
+سايز عرض قريم 55 ميلى مترو ارتفاع 75 ميل</p>
+            <h3 class="text-[36px] text-white">تامين روشنايى راهرو ها وورودى هاى ساختمان ؟</h3>
+            <p class="text-[22px] text-gray-300">براساس نصب روكار وآويز نور خطى طراحى شدء است. ايعاد قريم جراغ جرا
+سايز عرض قريم 55 ميلى مترو ارتفاع 75 ميل</p>
+          
+          </div>
+          <div>
+
+          </div>
+        </div>
+        <div class="w-[50%] flex flex-col">
+          <div class="">
+            <img src="./img/7.png" alt="" class="w-[75%] relative right-[95px] h-[500px]">
+          </div>
+          <div class="bg-secondary-bg rounded-bl-[20px] rounded-tr-[30px] w-[85%] px-16 py-24 text-center">
+            <h2 class="text-[32px]">سوالات شما را درباره چراغ خطى مدل L12 براساس نصب
+روكار وآويز ، دراين قسمت باسخ داده ميشود</h2>
+          </div>
+        </div>
+      </section>
+      <!-- ============================================= -->
+      <!-- مشاوره -->
+      <!-- ============================================= -->
+
+      <section
+        class="mt-[100px] flex items-center justify-center w-[80%] mx-auto lg:mt-[70px] lg:text-center"
+      >
+        <div
+          class="shadow-lg rounded-[16px] bg-secondary-bg flex flex-row p-[40px] justify-evenly w-[80%] md:flex-col md:items-center md:justify-center lg:gap-[30px] lg:rounded-[20px] lg:w-[90%]"
+        >
+          <h3 class="font-bold text-[30px]">
+            برای دریافت كشاوره رايگان از زنولد به اين قسمت مراجعه كنيد.
+          </h3>
+          <button
+            class="bg-white rounded-[15px] p-[5px] py-[10px] w-[150px] lg:shadow-lg text-[18px] custom-hover-shadow"
+          >
+            <a href="#">اینجا کیلک کنید</a>
+          </button>
+        </div>
+      </section>
+
+      <!-- ============================================= -->
+      <!-- footer -->
+      <!-- ============================================= -->
+
+      <footer
+        class="my-[50px] mx-auto text-[22px] p-[60px] w-[90%] bg-white flex flex-row-reverse justify-between rounded-[16px] lg:flex-col lg:justify-center lg:items-center lg:gap-[55px] lg:w-[90%]"
+      >
+        <div>
+          <a href="#"><img src="./img/logo.png" alt="logo" /></a>
+        </div>
+        <div class="flex flex-col">
+          <div class="">
+            <ul
+              class="flex flex-row gap-[35px] sm:gap-[5px] sm:flex-col sm:items-center"
+            >
+              <li class="hover:text-yellow-400"><a href="#">صفحه اصلی</a></li>
+              <li class="hover:text-yellow-400"><a href="#">محصولات</a></li>
+              <li class="hover:text-yellow-400"><a href="#">تماس با ما</a></li>
+              <li class="hover:text-yellow-400"><a href="#">وبلاگ</a></li>
+              <li class="hover:text-yellow-400"><a href="#">پروژه ها</a></li>
+            </ul>
+          </div>
+          <div class="text-center mt-[60px]">
+            <p>تمام حقوق این وبسایت محفوظ میباشد.</p>
+          </div>
+        </div>
+        <div>
+          <ul class="flex flex-row">
+            <li>
+              <a href="#"
+                ><?xml version="1.0" ?><!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'>
+                <svg
+                  enable-background="new 0 0 56.693 56.693"
+                  height="25.693px"
+                  id="Layer_1"
+                  version="1.1"
+                  viewBox="0 0 56.693 56.693"
+                  width="56.693px"
+                  xml:space="preserve"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                >
+                  <path
+                    d="M52.837,15.065c-1.811,0.805-3.76,1.348-5.805,1.591c2.088-1.25,3.689-3.23,4.444-5.592c-1.953,1.159-4.115,2-6.418,2.454  c-1.843-1.964-4.47-3.192-7.377-3.192c-5.581,0-10.106,4.525-10.106,10.107c0,0.791,0.089,1.562,0.262,2.303  c-8.4-0.422-15.848-4.445-20.833-10.56c-0.87,1.492-1.368,3.228-1.368,5.082c0,3.506,1.784,6.6,4.496,8.412  c-1.656-0.053-3.215-0.508-4.578-1.265c-0.001,0.042-0.001,0.085-0.001,0.128c0,4.896,3.484,8.98,8.108,9.91  c-0.848,0.23-1.741,0.354-2.663,0.354c-0.652,0-1.285-0.063-1.902-0.182c1.287,4.015,5.019,6.938,9.441,7.019  c-3.459,2.711-7.816,4.327-12.552,4.327c-0.815,0-1.62-0.048-2.411-0.142c4.474,2.869,9.786,4.541,15.493,4.541  c18.591,0,28.756-15.4,28.756-28.756c0-0.438-0.009-0.875-0.028-1.309C49.769,18.873,51.483,17.092,52.837,15.065z"
+                  /></svg
+              ></a>
+            </li>
+            <li>
+              <a href="#"
+                ><?xml version="1.0" ?><!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'>
+                <svg
+                  enable-background="new 0 0 56.693 56.693"
+                  height="25.693px"
+                  id="Layer_1"
+                  version="1.1"
+                  viewBox="0 0 56.693 56.693"
+                  width="56.693px"
+                  xml:space="preserve"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                >
+                  <path
+                    d="M52.837,15.065c-1.811,0.805-3.76,1.348-5.805,1.591c2.088-1.25,3.689-3.23,4.444-5.592c-1.953,1.159-4.115,2-6.418,2.454  c-1.843-1.964-4.47-3.192-7.377-3.192c-5.581,0-10.106,4.525-10.106,10.107c0,0.791,0.089,1.562,0.262,2.303  c-8.4-0.422-15.848-4.445-20.833-10.56c-0.87,1.492-1.368,3.228-1.368,5.082c0,3.506,1.784,6.6,4.496,8.412  c-1.656-0.053-3.215-0.508-4.578-1.265c-0.001,0.042-0.001,0.085-0.001,0.128c0,4.896,3.484,8.98,8.108,9.91  c-0.848,0.23-1.741,0.354-2.663,0.354c-0.652,0-1.285-0.063-1.902-0.182c1.287,4.015,5.019,6.938,9.441,7.019  c-3.459,2.711-7.816,4.327-12.552,4.327c-0.815,0-1.62-0.048-2.411-0.142c4.474,2.869,9.786,4.541,15.493,4.541  c18.591,0,28.756-15.4,28.756-28.756c0-0.438-0.009-0.875-0.028-1.309C49.769,18.873,51.483,17.092,52.837,15.065z"
+                  /></svg
+              ></a>
+            </li>
+            <li>
+              <a href="#"
+                ><?xml version="1.0" ?><!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'>
+                <svg
+                  enable-background="new 0 0 56.693 56.693"
+                  height="25.693px"
+                  id="Layer_1"
+                  version="1.1"
+                  viewBox="0 0 56.693 56.693"
+                  width="56.693px"
+                  xml:space="preserve"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                >
+                  <path
+                    d="M52.837,15.065c-1.811,0.805-3.76,1.348-5.805,1.591c2.088-1.25,3.689-3.23,4.444-5.592c-1.953,1.159-4.115,2-6.418,2.454  c-1.843-1.964-4.47-3.192-7.377-3.192c-5.581,0-10.106,4.525-10.106,10.107c0,0.791,0.089,1.562,0.262,2.303  c-8.4-0.422-15.848-4.445-20.833-10.56c-0.87,1.492-1.368,3.228-1.368,5.082c0,3.506,1.784,6.6,4.496,8.412  c-1.656-0.053-3.215-0.508-4.578-1.265c-0.001,0.042-0.001,0.085-0.001,0.128c0,4.896,3.484,8.98,8.108,9.91  c-0.848,0.23-1.741,0.354-2.663,0.354c-0.652,0-1.285-0.063-1.902-0.182c1.287,4.015,5.019,6.938,9.441,7.019  c-3.459,2.711-7.816,4.327-12.552,4.327c-0.815,0-1.62-0.048-2.411-0.142c4.474,2.869,9.786,4.541,15.493,4.541  c18.591,0,28.756-15.4,28.756-28.756c0-0.438-0.009-0.875-0.028-1.309C49.769,18.873,51.483,17.092,52.837,15.065z"
+                  /></svg
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </footer>
+    </main>
+    <script src="./app.js"></script>
+  </body>
+</html>

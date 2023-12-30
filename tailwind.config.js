@@ -12,7 +12,7 @@ module.exports = {
       },
       screens: {
         '2xl': { max: '1535px' },
-        xl: { max: '1279px' },
+        xl: { max: '1467px' },
         lg: { max: '1380px' },
         md: { max: '767px' },
         sm: { max: '490px' },
@@ -20,6 +20,9 @@ module.exports = {
       },
       fontFamily: {
         Yekan: ['Yekan'],
+      },
+      backgroundImage: {
+        'hero-pattern': "url('~@/dist/image/bg.png')",
       },
     },
   },

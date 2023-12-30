@@ -25,7 +25,8 @@
 
 body,
 .navbar,
-.projects {
+.projects,
+.product {
   background-image: url(./img/bg.png);
   background-repeat: repeat;
   background-position: center;
@@ -345,5 +346,98 @@ figure {
 @media screen and (min-width: 490px) and (max-width: 1380px) {
   .services {
     width: 90%;
+  }
+}
+
+/* product-sldier-styles */
+
+#container {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  place-items: center;
+}
+
+#slider-container {
+  height: max-content;
+
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  padding: 20px;
+}
+
+#slider-container .btn {
+  position: absolute;
+  top: calc(50% - 30px);
+  height: 30px;
+  width: 30px;
+  background: white;
+  padding: 25px;
+  padding-top: 35px;
+  padding-bottom: 35px;
+  border-radius: 10px;
+  color: black;
+}
+
+#slider-container .btn:hover {
+  cursor: pointer;
+}
+
+#slider-container .btn.inactive {
+  border-color: rgb(153, 121, 126);
+}
+
+#slider-container .btn:first-of-type {
+  left: 10px;
+}
+
+#slider-container .btn:last-of-type {
+  right: 10px;
+}
+
+#slider-container #slider {
+  display: flex;
+  width: 1000%;
+  height: 100%;
+  transition: all 0.5s;
+}
+
+#slider-container #slider .slide {
+  height: 90%;
+  margin: auto 10px;
+
+  display: grid;
+  place-items: center;
+}
+
+#slider-container #slider .slide span {
+  color: white;
+  font-size: 150px;
+}
+
+@media only screen and (min-width: 1100px) {
+  #slider-container #slider .slide {
+    width: 370px;
+    margin-right: 16px; /* Adjusted margin */
+  }
+}
+
+@media only screen and (max-width: 1100px) {
+  #slider-container #slider .slide {
+    width: calc(3.3333333% - 20px);
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  #slider-container #slider .slide {
+    width: calc(5% - 20px);
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  #slider-container #slider .slide {
+    width: calc(10% - 20px);
   }
 }
