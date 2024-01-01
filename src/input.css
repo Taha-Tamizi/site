@@ -420,7 +420,7 @@ figure {
 @media only screen and (min-width: 1100px) {
   #slider-container #slider .slide {
     width: 370px;
-    margin-right: 16px; /* Adjusted margin */
+    margin-right: 16px; 
   }
 }
 
