@@ -4265,11 +4265,11 @@ figure {
 }
 
 .wrapper i:first-child {
-  left: 0px;
+  left: 20px;
 }
 
 .wrapper i:last-child {
-  right: 0px;
+  right: 20px;
 }
 
 .wrapper .carousel {
