@@ -47,45 +47,51 @@
       <!-- product-header section -->
       <!-- ============================================= -->
       <section
-        class="relative top-[130px] w-full flex flex-row bg-gray-300 h-[1000px] mx-auto border-b-yellow-400 border-b-[30px]"
+        class="relative top-[130px] w-full flex flex-row bg-gray-300 h-[950px] mx-auto border-b-yellow-400 border-b-[30px] lg:flex-col-reverse lg:mx-auto lg:border-none lg:bg-inherit lg:h-max lg:top-[90px] lg:px-5"
       >
-        <div class="w-[50%]">
-          <img src="./img/4.png" alt="" class="w-full pt-7 pl-7" />
+        <div class="w-[50%] lg:w-full">
+          <img
+            src="./img/product4.png"
+            alt=""
+            class="w-full h-max pt-5 pl-5 lg:p-3 lg:bg-gray-300 lg:mx-auto lg:rounded-[40px]"
+          />
         </div>
         <div
-          class="w-[50%] h-[550px] pt-16 rounded-br-[80px] product bg-main-bg flex flex-col gap-6 items-center text-center px-32 text-white"
+          class="w-[50%] lg:w-full h-max py-16 rounded-br-[80px] product relative bg-main-bg flex flex-col gap-6 items-center text-center px-32 text-white lg:bg-inherit lg:px-0 lg:mx-auto"
         >
-          <h1 class="text-[36px]">
+          <h1 class="text-[32px] lg:text-[26px]">
             "چراغ خطی مدل L12 براساس نصب روکار و آویز طراحی شده است"
           </h1>
-          <p class="text-[18px] text-gray-300">
+          <p class="text-[16px] leading-[40px] text-gray-300">
             كاربرد جراغ: به عنوان نوردكوراتيو در فضاهاى مسكونى، ادارى، تجارى و
             ... به عنوان تامين به عنوان تامين كننده نوراصلى براى فضاهاى مسكونى
           </p>
           <div
-            class="flex flex-row gap-[18px] my-7 mx-auto text-[18px] sm:text-[14px]"
+            class="flex flex-row gap-[18px] my-7 mx-auto text-[18px] sm:text-[14px] lg:flex-col-reverse lg:gap-2 lg:items-center lg:my-0"
           >
             <button
-              class="text-white flex items-center gap-5 lg:p-[4px] lg:px-[8px]"
+              class="text-white flex items-center gap-2 lg:p-[4px] lg:px-[8px]"
             >
               <a href="#">مشاوره رایگان</a>
               <img src="./img/arrow.png" alt="" class="w-[28px]" />
             </button>
             <button
               type="button"
-              class="text-black bg-white flex items-center gap-5 p-[7px] px-[21px] rounded-[15px] lg:p-[4px] lg:px-[8px] custom-hover-shadow"
+              class="text-black bg-white flex items-center gap-2 py-[3px] px-[15px] rounded-[10px] lg:p-[4px] lg:px-[8px] custom-hover-shadow"
             >
-              <img src="./img/left.png" alt="" class="w-[28px]" />
+              <img src="./img/product2.png" alt="" class="w-[28px]" />
               <a href="#" class="text-[14px]">مشاهده همه محصولات</a>
             </button>
           </div>
-          <div class="flex flex-row gap-10 text-[14px]">
-            <div class="flex flex-row items-center gap-5">
-              <img src="./img/arrow.png" alt="" class="w-[28px]" />
+          <div
+            class="flex flex-row gap-10 text-[14px] lg:flex-col lg:gap-3 lg:items-center lg:my-[-20px]"
+          >
+            <div class="flex flex-row items-center gap-2">
+              <img src="./img/product3.png" alt="" class="w-[28px]" />
               <h5>کد محصول: MRP-2M</h5>
             </div>
-            <div class="flex flex-row items-center gap-5">
-              <img src="./img/arrow.png" alt="" class="w-[28px]" />
+            <div class="flex flex-row items-center gap-2">
+              <img src="./img/product3.png" alt="" class="w-[28px]" />
               <h5>دسته بندی: Multi Track System</h5>
             </div>
           </div>
@@ -96,53 +102,45 @@
       <!-- product-slider section -->
       <!-- ============================================= -->
 
-      <section class="relative top-[-220px] text-center">
-        <h2 class="text-black mb-[50px] text-[40px]">تصاویر محصول</h2>
-        <div id="container">
-          <div id="slider-container">
-            <span onclick="slideRight()" class="btn"></span>
-            <div id="slider">
-              <div class="slide">
-                <span><img src="./img/2.png" alt="" /></span>
-              </div>
-              <div class="slide">
-                <span><img src="./img/2.png" alt="" /></span>
-              </div>
-              <div class="slide">
-                <span><img src="./img/2.png" alt="" /></span>
-              </div>
-              <div class="slide">
-                <span><img src="./img/2.png" alt="" /></span>
-              </div>
-              <div class="slide">
-                <span><img src="./img/2.png" alt="" /></span>
-              </div>
-              <div class="slide">
-                <span><img src="./img/2.png" alt="" /></span>
-              </div>
-              <div class="slide">
-                <span><img src="./img/2.png" alt="" /></span>
-              </div>
-              <div class="slide">
-                <span><img src="./img/2.png" alt="" /></span>
-              </div>
-              <div class="slide">
-                <span><img src="./img/2.png" alt="" /></span>
-              </div>
-              <div class="slide">
-                <span><img src="./img/2.png" alt="" /></span>
-              </div>
-            </div>
-            <span onclick="slideLeft()" class="btn"></span>
-          </div>
-        </div>
+      <section class="relative flex flex-col gap-20 w-full mx-auto top-[-180px] text-center lg:static lg:mt-[180px]">
+        <h2 class="text-[40px]">تصاویر محصولات</h2>
+        <div class="wrapper mx-auto">
+          <i id="left" class="flex items-center"><img src="./img/l-arrow.png" alt=""></i>
+      <ul class="carousel">
+        <li class="card">
+         <img src="img/2.png" alt="img" draggable="false">
+          
+        </li>
+        <li class="card">
+         <img src="img/2.png" alt="img" draggable="false">
+          
+        </li>
+        <li class="card">
+         <img src="img/2.png" alt="img" draggable="false">
+          
+        </li>
+        <li class="card">
+         <img src="img/2.png" alt="img" draggable="false">
+          
+        </li>
+        <li class="card">
+         <img src="img/2.png" alt="img" draggable="false">
+          
+        </li>
+        <li class="card">
+         <img src="img/2.png" alt="img" draggable="false">
+          
+        </li>
+      </ul>
+          <i id="left" class="flex items-center"><img src="./img/r-arrow.png" alt=""></i>
+    </div>
       </section>
 
       <!-- ============================================= -->
       <!-- product-video section -->
       <!-- ============================================= -->
-        <section class="flex flex-row w-full ">
-          <div class="w-[50%] bg-gray-300 rounded-l-[50px] py-6 pl-6">
+      <section class="flex flex-row w-full items-center justify-center lg:flex-col-reverse lg:gap-10 lg:mt-[60px]">
+          <div class="w-[50%] bg-gray-300 rounded-l-[50px] py-5 pl-5 lg:w-[90%] lg:p-2 lg:h-[250px] lg:rounded-[25px]">
                <div id="popup" class="popup-overlay">
             <div class="popup-container">
               <video
@@ -156,24 +154,24 @@
           </div>
 
           <div
-            class="rounded-l-[50px] overflow-hidden sm:h-[150px] lg:w-[90%] mx-auto video-container relative"
+            class="rounded-l-[50px] overflow-hidden lg:h-full lg:w-[100%] mx-auto video-container relative lg:rounded-[25px]"
           >
             <video
               id="myVideo"
               src="./video/river_creek_stream_nature_flowing_821.mp4"
               poster="./img/download.jpg"
-              class="w-full h-[528px] object-cover"
+              class="w-full h-[528px] object-cover lg:h-max"
               controls
             ></video>
             <button id="playButton" class="play-button">&#9654;</button>
           </div>
         </div>
           </div>
-          <div class="text-center w-[50%] px-14 flex flex-col gap-14 items-center">
-            <h1 class="text-[40px] text-white">
+          <div class="text-center w-[50%] px-14 flex flex-col gap-14 items-center lg:w-full lg:px-5 lg:gap-2">
+            <h1 class="text-[36px] text-white lg:text-[24px]">
             "چراغ خطی مدل L12 براساس نصب روکار و آویز طراحی شده است"
           </h1>
-            <p class="text-[22px] text-gray-300 leading-[50px]">جراغ خطى مدل L12 براساس نصب روكار وآويز طراحى شده است. ايعاد فريم جراغ
+            <p class="text-[16px] text-right text-gray-300 leading-[50px]">جراغ خطى مدل L12 براساس نصب روكار وآويز طراحى شده است. ايعاد فريم جراغ
 خطى مدل L12: سايز بروفيل 55 ميلى متردر 75 ميلى مترو بدون محدوديت طول
 
 در هر سايز طول مورد نياز بروزه است. بدنه اين جراغ خطى از جنس آلومينيوم است
@@ -188,31 +186,37 @@
       <!-- ============================================= -->
       <!-- product-faq section -->
       <!-- ============================================= -->
-      <section class="w-full mt-[200px] flex flex-row gap-14 items-center justify-center mx-auto">
-        <div class="w-[50%] mr-[100px]">
-          <h1 class="text-[40px] text-yellow-400 text-center mb-20">پرسش و پاسخ متداول</h1>
+      <section class="w-full mt-[200px] flex flex-row gap-14 items-center justify-center mx-auto lg:mt-[60px] lg:text-center">
+        <div class="w-[40%] mr-[100px] lg:w-[90%] lg:mr-0">
+          <h1 class="text-[28px] text-yellow-400 text-center mb-10">پرسش و پاسخ متداول</h1>
           <div class="flex flex-col gap-8">
-            <h3 class="text-[32px] text-white">تامين روشنايى راهرو ها وورودى هاى ساختمان ؟</h3>
-            <p class="text-[18px] text-gray-300">براساس نصب روكار وآويز نور خطى طراحى شدء است. ايعاد قريم جراغ جرا
+            <h3 class="text-[22px] lg:text-[18px] text-white">تامين روشنايى راهرو ها وورودى هاى ساختمان ؟</h3>
+            <p class="text-[14px] text-gray-300">براساس نصب روكار وآويز نور خطى طراحى شدء است. ايعاد قريم جراغ جرا
 سايز عرض قريم 55 ميلى مترو ارتفاع 75 ميل</p>
-            <h3 class="text-[32px] text-white">تامين روشنايى راهرو ها وورودى هاى ساختمان ؟</h3>
-            <p class="text-[18px] text-gray-300">براساس نصب روكار وآويز نور خطى طراحى شدء است. ايعاد قريم جراغ جرا
+            <h3 class="text-[22px] lg:text-[18px] text-white">تامين روشنايى راهرو ها وورودى هاى ساختمان ؟</h3>
+            <p class="text-[14px] text-gray-300">براساس نصب روكار وآويز نور خطى طراحى شدء است. ايعاد قريم جراغ جرا
 سايز عرض قريم 55 ميلى مترو ارتفاع 75 ميل</p>
-            <h3 class="text-[32px] text-white">تامين روشنايى راهرو ها وورودى هاى ساختمان ؟</h3>
-            <p class="text-[18px] text-gray-300">براساس نصب روكار وآويز نور خطى طراحى شدء است. ايعاد قريم جراغ جرا
+            <h3 class="text-[22px] lg:text-[18px] text-white">تامين روشنايى راهرو ها وورودى هاى ساختمان ؟</h3>
+            <p class="text-[14px] text-gray-300">براساس نصب روكار وآويز نور خطى طراحى شدء است. ايعاد قريم جراغ جرا
 سايز عرض قريم 55 ميلى مترو ارتفاع 75 ميل</p>
           
           </div>
-          <div>
-
+          <div class="flex justify-center items-center mt-12">
+               <button
+              type="button"
+              class="text-black bg-white flex items-center gap-2 py-[3px] px-[15px] rounded-[10px] lg:p-[4px] lg:px-[8px] custom-hover-shadow"
+            >
+              <img src="./img/product2.png" alt="" class="w-[28px]" />
+              <a href="#" class="text-[14px]">مشاهده همه محصولات</a>
+            </button>
           </div>
         </div>
-        <div class="w-[50%] flex flex-col">
+        <div class="w-[60%] flex flex-col lg:hidden">
           <div class="">
-            <img src="./img/7.png" alt="" class="w-[75%] relative right-[70px] h-[500px]">
+            <img src="./img/product1.png" alt="" class="w-[85%] relative right-[40px] ">
           </div>
-          <div class="bg-secondary-bg rounded-bl-[20px] rounded-tr-[30px] w-[85%] px-16 py-8 text-center">
-            <h2 class="text-[26px]">سوالات شما را درباره چراغ خطى مدل L12 براساس نصب
+          <div class="bg-secondary-bg rounded-bl-[20px] rounded-tr-[30px] w-[90%] px-16 py-20 text-center">
+            <h2 class="text-[22px]">سوالات شما را درباره چراغ خطى مدل L12 براساس نصب
 روكار وآويز ، دراين قسمت باسخ داده ميشود</h2>
           </div>
         </div>
@@ -222,7 +226,7 @@
       <!-- ============================================= -->
 
       <section
-        class="mt-[100px] flex items-center justify-center w-[85%] mx-auto lg:mt-[70px] lg:text-center"
+        class="mt-[100px] flex items-center justify-center w-[95%] mx-auto lg:mt-[70px] lg:text-center"
       >
         <div
           class="shadow-lg rounded-[16px] bg-secondary-bg flex flex-row p-[40px] justify-evenly w-[80%] md:flex-col md:items-center md:justify-center lg:gap-[30px] lg:rounded-[20px] lg:w-[90%]"
