@@ -403,6 +403,7 @@ figure {
   scroll-behavior: smooth;
   scrollbar-width: none;
 }
+
 .carousel::-webkit-scrollbar {
   display: none;
 }
@@ -432,8 +433,6 @@ figure {
   flex-direction: column;
 }
 .carousel .card .img {
-  background: #8b53ff;
-
   border-radius: 50%;
 }
 .card .img img {
@@ -460,5 +459,14 @@ figure {
 @media screen and (max-width: 600px) {
   .wrapper .carousel {
     grid-auto-columns: 100%;
+  }
+}
+
+@media screen and (min-width: 1580px) {
+  .product-header {
+    height: 1200px;
+  }
+  .slider-section {
+    top: -250px;
   }
 }

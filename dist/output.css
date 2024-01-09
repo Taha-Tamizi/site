@@ -2446,6 +2446,18 @@ input[type="range"]:active::-webkit-slider-thumb {
   border-top-right-radius: 30px;
 }
 
+.rounded-tl-\[80px\] {
+  border-top-left-radius: 80px;
+}
+
+.rounded-br-\[60px\] {
+  border-bottom-right-radius: 60px;
+}
+
+.rounded-tl-\[60px\] {
+  border-top-left-radius: 60px;
+}
+
 .\!border-0 {
   border-width: 0px !important;
 }
@@ -4318,7 +4330,6 @@ figure {
 }
 
 .carousel .card .img {
-  background: #8b53ff;
   border-radius: 50%;
 }
 
@@ -4351,6 +4362,16 @@ figure {
 @media screen and (max-width: 600px) {
   .wrapper .carousel {
     grid-auto-columns: 100%;
+  }
+}
+
+@media screen and (min-width: 1580px) {
+  .product-header {
+    height: 1200px;
+  }
+
+  .slider-section {
+    top: -250px;
   }
 }
 
