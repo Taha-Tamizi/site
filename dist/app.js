@@ -76,9 +76,7 @@ const firstCardWidth = carousel.querySelector('.card').offsetWidth
 const arrowBtns = document.querySelectorAll('.wrapper i')
 const carouselChildrens = [...carousel.children]
 
-// Add this condition after initializing the carouselChildrens variable
 if (carouselChildrens.length <= 5) {
-  // If there are 5 or fewer slides, hide the navigation buttons
   arrowBtns.forEach((btn) => (btn.style.display = 'none'))
 }
 
@@ -90,11 +88,10 @@ let isDragging = false,
 
 let cardPerView = Math.round(carousel.offsetWidth / firstCardWidth)
 
-// Add this condition to set justify-content:center when there are fewer than 4 slides
 if (carouselChildrens.length < 5) {
   carousel.style.justifyContent = 'center'
 } else {
-  carousel.style.justifyContent = 'flex-start' // Set to 'flex-start' for other cases
+  carousel.style.justifyContent = 'flex-start'
 }
 
 carousel.classList.add('no-transition')
@@ -104,7 +101,7 @@ carousel.classList.remove('no-transition')
 arrowBtns.forEach((btn) => {
   btn.addEventListener('click', () => {
     carousel.scrollLeft += btn.id == 'left' ? -firstCardWidth : firstCardWidth
-    handleButtonVisibility() // Call the function after manual scrolling
+    handleButtonVisibility()
   })
 })
 
@@ -126,47 +123,26 @@ const dragStop = () => {
 }
 
 const infiniteScroll = () => {
-  // Comment out or remove the following lines
-  /*
-  if (carousel.scrollLeft === 0) {
-    carousel.classList.add('no-transition');
-    carousel.scrollLeft = carousel.scrollWidth - 2 * carousel.offsetWidth;
-    carousel.classList.remove('no-transition');
-  } else if (
-    Math.ceil(carousel.scrollLeft) ===
-    carousel.scrollWidth - carousel.offsetWidth
-  ) {
-    carousel.classList.add('no-transition');
-    carousel.scrollLeft = carousel.offsetWidth;
-    carousel.classList.remove('no-transition');
-  }
-  */
-
   clearTimeout(timeoutId)
   if (!wrapper.matches(':hover')) autoPlay()
 }
 
-// Modify the autoPlay function to call handleButtonVisibility
 const autoPlay = () => {
   if (window.innerWidth < 800 || !isAutoPlay) return
 
   timeoutId = setTimeout(() => {
     carousel.scrollLeft += firstCardWidth
-    handleButtonVisibility() // Call the function after scrolling
+    handleButtonVisibility()
   }, 2500)
 }
 
 const handleButtonVisibility = () => {
-  // Show/hide buttons based on the number of slides
   arrowBtns.forEach(
     (btn) =>
       (btn.style.display = carouselChildrens.length <= 5 ? 'none' : 'flex')
   )
-
-  // Set justify-content:center only when there are fewer than 4 slides
 }
 
-// Call handleButtonVisibility once when the page loads to set initial button visibility and justify-content
 handleButtonVisibility()
 
 carousel.addEventListener('mousedown', dragStart)

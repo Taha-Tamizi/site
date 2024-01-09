@@ -95,18 +95,6 @@ li {
   right: 0px;
 }
 
-.product::after {
-  content: '';
-  position: absolute;
-  height: 40px;
-  width: 40px;
-  border-top-right-radius: 50%;
-  box-shadow: 15px 0px 0px 0px #575757;
-  top: 0px;
-  transform: scaleX(-1);
-  right: -40px;
-}
-
 .hide-elements::before,
 .hide-elements::after {
   display: none;
